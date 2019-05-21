@@ -6,12 +6,22 @@
 //  Copyright © 2019 Matt Hendrickson. All rights reserved.
 //
 
+//YELP API KEY MEUh_M8l7apQHZBxo4wGZC3SsRvNwGuWPGKAAdz1rZt3T3mXj3hdy9SeENL5_UUYKebBy3c_Ysc8_cVD-ZCPyRn90Efl8OkKVj3LxzGnh06mJwhcc5roLnoSSE_kXHYx
+
+//Yelp CLient ID O2R6In3_7k1shrJcm5qXjw
+
+
+
 import UIKit
 import CoreData
+#import Yelp
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    let YelpAPIKey = "MEUh_M8l7apQHZBxo4wGZC3SsRvNwGuWPGKAAdz1rZt3T3mXj3hdy9SeENL5_UUYKebBy3c_Ysc8_cVD-ZCPyRn90Efl8OkKVj3LxzGnh06mJwhcc5roLnoSSE_kXHYx"
+    let YelpClientID = "O2R6In3_7k1shrJcm5qXjw"
+    
     var window: UIWindow?
     var navController: UINavigationController?
 
@@ -23,6 +33,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         navController = UINavigationController(rootViewController: homeVC)
         window!.rootViewController = navController
         window!.makeKeyAndVisible()
+        
+        Yelp.setupWithConsumerKey()
+
+        
         return true
     }
 

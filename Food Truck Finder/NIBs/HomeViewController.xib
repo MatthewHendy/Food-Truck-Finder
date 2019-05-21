@@ -12,6 +12,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="Food_Truck_Finder" customModuleProvider="target">
             <connections>
+                <outlet property="map" destination="oQN-WL-bGk" id="o1q-3u-xjn"/>
+                <outlet property="searchTextField" destination="zG6-Ar-M65" id="86F-Je-0oI"/>
+                <outlet property="tableHeightButton" destination="gxi-Hd-ZnH" id="1sa-ZY-Pdg"/>
+                <outlet property="tableHeightConstraint" destination="My8-fx-k8D" id="F97-IP-3TR"/>
                 <outlet property="view" destination="tA8-Kw-lfm" id="Lq0-gG-2yw"/>
             </connections>
         </placeholder>
@@ -20,17 +24,52 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jPl-IZ-0fm">
-                    <rect key="frame" x="139" y="234" width="42" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="oQN-WL-bGk">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="355"/>
+                </mapView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fDF-lO-8v7">
+                    <rect key="frame" x="0.0" y="415" width="320" height="153"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gxi-Hd-ZnH">
+                    <rect key="frame" x="0.0" y="355" width="320" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="de9-vi-AGc"/>
+                    </constraints>
+                    <state key="normal" title="Raise"/>
+                    <connections>
+                        <action selector="tableHeightButtonPressed:" destination="-1" eventType="touchUpInside" id="5zr-dW-V7D"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="zG6-Ar-M65">
+                    <rect key="frame" x="0.0" y="385" width="320" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="tCH-dz-Wwe"/>
+                    </constraints>
                     <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="zG6-Ar-M65" firstAttribute="top" secondItem="gxi-Hd-ZnH" secondAttribute="bottom" id="3bL-8G-2cd"/>
+                <constraint firstItem="fDF-lO-8v7" firstAttribute="bottom" secondItem="xmA-CJ-SJq" secondAttribute="bottom" id="8BQ-G0-VjO"/>
+                <constraint firstItem="fDF-lO-8v7" firstAttribute="leading" secondItem="xmA-CJ-SJq" secondAttribute="leading" id="FNb-dd-hlR"/>
+                <constraint firstItem="gxi-Hd-ZnH" firstAttribute="trailing" secondItem="xmA-CJ-SJq" secondAttribute="trailing" id="J7c-Nh-f7G"/>
+                <constraint firstItem="xmA-CJ-SJq" firstAttribute="bottom" secondItem="gxi-Hd-ZnH" secondAttribute="top" constant="213" id="My8-fx-k8D"/>
+                <constraint firstItem="oQN-WL-bGk" firstAttribute="trailing" secondItem="xmA-CJ-SJq" secondAttribute="trailing" id="OG0-ws-nwN"/>
+                <constraint firstItem="zG6-Ar-M65" firstAttribute="trailing" secondItem="xmA-CJ-SJq" secondAttribute="trailing" id="U0J-YG-6GA"/>
+                <constraint firstItem="gxi-Hd-ZnH" firstAttribute="top" secondItem="oQN-WL-bGk" secondAttribute="bottom" id="aWt-Ov-bdU"/>
+                <constraint firstItem="gxi-Hd-ZnH" firstAttribute="leading" secondItem="xmA-CJ-SJq" secondAttribute="leading" id="bD1-6a-cti"/>
+                <constraint firstItem="fDF-lO-8v7" firstAttribute="trailing" secondItem="xmA-CJ-SJq" secondAttribute="trailing" id="ezo-7J-wUk"/>
+                <constraint firstItem="fDF-lO-8v7" firstAttribute="top" secondItem="zG6-Ar-M65" secondAttribute="bottom" id="h3N-nF-wME"/>
+                <constraint firstItem="oQN-WL-bGk" firstAttribute="leading" secondItem="xmA-CJ-SJq" secondAttribute="leading" id="jy8-g3-cBa"/>
+                <constraint firstItem="zG6-Ar-M65" firstAttribute="leading" secondItem="xmA-CJ-SJq" secondAttribute="leading" id="kT6-vc-cVp"/>
+                <constraint firstItem="oQN-WL-bGk" firstAttribute="top" secondItem="tA8-Kw-lfm" secondAttribute="top" id="z0Z-oF-ZCf"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="xmA-CJ-SJq"/>
-            <point key="canvasLocation" x="38" y="-353"/>
+            <point key="canvasLocation" x="37.5" y="-353.87323943661971"/>
         </view>
     </objects>
 </document>
