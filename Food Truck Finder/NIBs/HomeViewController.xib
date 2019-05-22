@@ -12,7 +12,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="Food_Truck_Finder" customModuleProvider="target">
             <connections>
-                <outlet property="map" destination="oQN-WL-bGk" id="o1q-3u-xjn"/>
+                <outlet property="itemsTableView" destination="fDF-lO-8v7" id="B2T-uR-2rp"/>
+                <outlet property="map" destination="oQN-WL-bGk" id="5gt-Zv-GBB"/>
                 <outlet property="searchTextField" destination="zG6-Ar-M65" id="86F-Je-0oI"/>
                 <outlet property="tableHeightButton" destination="gxi-Hd-ZnH" id="1sa-ZY-Pdg"/>
                 <outlet property="tableHeightConstraint" destination="My8-fx-k8D" id="F97-IP-3TR"/>

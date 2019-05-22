@@ -16,6 +16,7 @@ class HomeViewController: UIViewController, MKMapViewDelegate, UITableViewDelega
     @IBOutlet weak var tableHeightButton: UIButton!
     @IBOutlet weak var tableHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var searchTextField: UITextField!
+    @IBOutlet weak var itemsTableView: UITableView!
     
     //var searchesArray
     
