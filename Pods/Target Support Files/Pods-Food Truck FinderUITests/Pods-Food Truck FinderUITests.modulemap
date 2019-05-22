@@ -1,0 +1,6 @@
+framework module Pods_Food_Truck_FinderUITests {
+  umbrella header "Pods-Food Truck FinderUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

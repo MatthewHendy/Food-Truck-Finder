@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 import MapKit
+import YelpAPI
 
 class HomeViewController: UIViewController, MKMapViewDelegate, UITableViewDelegate, UITableViewDataSource, CLLocationManagerDelegate, UITextFieldDelegate {
     
@@ -18,11 +19,15 @@ class HomeViewController: UIViewController, MKMapViewDelegate, UITableViewDelega
     @IBOutlet weak var searchTextField: UITextField!
     @IBOutlet weak var itemsTableView: UITableView!
     
+    var Yelp:YLPClient!
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
+
     //var searchesArray
     
     
     override func viewDidLoad() {
         super .viewDidLoad()
+        Yelp = appDelegate.getYelpObject()
         
     }
     

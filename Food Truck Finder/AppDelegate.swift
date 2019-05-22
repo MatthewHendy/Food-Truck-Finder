@@ -14,12 +14,16 @@
 
 import UIKit
 import CoreData
+import YelpAPI
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
     var navController: UINavigationController?
+    
+    private let YelpAPIKey = "MEUh_M8l7apQHZBxo4wGZC3SsRvNwGuWPGKAAdz1rZt3T3mXj3hdy9SeENL5_UUYKebBy3c_Ysc8_cVD-ZCPyRn90Efl8OkKVj3LxzGnh06mJwhcc5roLnoSSE_kXHYx"
+    private var Yelp:YLPClient!
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
@@ -30,10 +34,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window!.rootViewController = navController
         window!.makeKeyAndVisible()
         
-        //Yelp.setupWithConsumerKey()
+        Yelp = YLPClient.init(apiKey: YelpAPIKey)
 
         
         return true
+    }
+    
+    open func getYelpObject() -> YLPClient {
+        return Yelp
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
