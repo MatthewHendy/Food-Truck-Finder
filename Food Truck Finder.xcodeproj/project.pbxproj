@@ -18,6 +18,7 @@
 		FA719EA0228C677400545EB5 /* Food_Truck_FinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA719E9F228C677400545EB5 /* Food_Truck_FinderUITests.swift */; };
 		FA719EB0228C6F0000545EB5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA719EAF228C6F0000545EB5 /* HomeViewController.swift */; };
 		FA719EB3228C6F2200545EB5 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA719EB2228C6F2200545EB5 /* HomeViewController.xib */; };
+		FA74B2F82295F08500EF95A6 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA74B2F72295F08500EF95A6 /* Location.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		FA719EA1228C677400545EB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA719EAF228C6F0000545EB5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		FA719EB2228C6F2200545EB5 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		FA74B2F72295F08500EF95A6 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +103,6 @@
 				8AB646AF3B337B211F02E37E /* Pods-Food Truck FinderUITests.debug.xcconfig */,
 				B9976A0EDDE73323D8D3DFB9 /* Pods-Food Truck FinderUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -147,6 +148,7 @@
 				FA719E88228C677400545EB5 /* LaunchScreen.storyboard */,
 				FA719E8B228C677400545EB5 /* Info.plist */,
 				FA719E83228C677200545EB5 /* Food_Truck_Finder.xcdatamodeld */,
+				FA74B2F72295F08500EF95A6 /* Location.swift */,
 			);
 			path = "Food Truck Finder";
 			sourceTree = "<group>";
@@ -411,6 +413,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA74B2F82295F08500EF95A6 /* Location.swift in Sources */,
 				FA719E85228C677200545EB5 /* Food_Truck_Finder.xcdatamodeld in Sources */,
 				FA719E7D228C677200545EB5 /* AppDelegate.swift in Sources */,
 				FA719EB0228C6F0000545EB5 /* HomeViewController.swift in Sources */,
