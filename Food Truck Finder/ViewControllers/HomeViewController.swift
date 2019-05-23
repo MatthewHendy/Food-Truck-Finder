@@ -13,6 +13,9 @@ import YelpAPI
 
 class HomeViewController: UIViewController, MKMapViewDelegate, UITableViewDelegate, UITableViewDataSource, CLLocationManagerDelegate, UITextFieldDelegate {
     
+    let filterFood_Trucks = "Food Trucks"
+    let filterfoodtruck = "foodtrucks"
+    
     @IBOutlet weak var map: MKMapView!
     @IBOutlet weak var tableHeightButton: UIButton!
     @IBOutlet weak var tableHeightConstraint: NSLayoutConstraint!
@@ -129,18 +132,7 @@ class HomeViewController: UIViewController, MKMapViewDelegate, UITableViewDelega
                 if(error != nil) {
                     
                 } else {
-                    if let businessArray = searchResult?.businesses {
-                        if let filteredArray = self.filterOutNonFoodTrucks(businessArray) {
-                            self.searchResultsArray = filteredArray//TODO: figure out weak self
-                            
-                            self.reloadTableAndAddAnnotationsToMap()
-                        } else {
-                            // TODO: no businesses matched your results
-                        }
-                        
-                    } else {
-                        // TODO: alert. No businesses returned in the array
-                    }
+                    self.handleYLPSearchResult(searchResult)
                 }
             }
             
@@ -151,11 +143,25 @@ class HomeViewController: UIViewController, MKMapViewDelegate, UITableViewDelega
         return true
     }
     
+    private func handleYLPSearchResult(_ searchResult: YLPSearch?) {
+        if let businessArray = searchResult?.businesses {
+            if let filteredArray = self.filterOutNonFoodTrucks(businessArray) {
+                self.searchResultsArray = filteredArray//TODO: figure out weak self
+                self.reloadTableAndAddAnnotationsToMap()
+            } else {
+                // TODO: alert no businesses matched your results
+            }
+            
+        } else {
+            // TODO: alert. No businesses returned in the array
+        }
+    }
+    
     private func filterOutNonFoodTrucks(_ arrayOfBusinesses:[YLPBusiness]) -> [YLPBusiness]? {
         var foodtrucks:[YLPBusiness] = Array()
         for business in arrayOfBusinesses {
             for category in business.categories {
-                if(category.name == "Food Trucks" || category.name == "foodtrucks" || category.alias == "Food Trucks" || category.alias == "foodtrucks") {
+                if(category.name == filterFood_Trucks || category.name == filterfoodtruck || category.alias == filterFood_Trucks || category.alias == filterfoodtruck) {
                     foodtrucks.append(business)
                 }
             }
