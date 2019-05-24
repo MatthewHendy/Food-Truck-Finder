@@ -13,8 +13,8 @@ import YelpAPI
 
 class HomeViewController: UIViewController, MKMapViewDelegate, UITableViewDelegate, UITableViewDataSource, CLLocationManagerDelegate, UITextFieldDelegate {
     
-    let filterFood_Trucks = "Food Trucks"
-    let filterfoodtruck = "foodtrucks"
+    private let filterFood_Trucks = "Food Trucks"
+    private let filterfoodtruck = "foodtrucks"
     
     @IBOutlet weak var map: MKMapView!
     @IBOutlet weak var tableHeightButton: UIButton!
@@ -40,8 +40,9 @@ class HomeViewController: UIViewController, MKMapViewDelegate, UITableViewDelega
         LocationManager.delegate = self
         
         LocationManager.requestWhenInUseAuthorization()
-        
         LocationManager.startUpdatingLocation()
+        
+        self.navigationItem.title = "Food Truck Finder"
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -103,15 +104,6 @@ class HomeViewController: UIViewController, MKMapViewDelegate, UITableViewDelega
         
     }
     
-    private func reloadTableAndAddAnnotationsToMap() {
-        table.reloadData()
-        
-    }
-    
-    private func addAnnotationsToMap() {
-        
-    }
-    
     //MARK: TextField Delegates
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         if let searchText = textField.text {
@@ -130,9 +122,11 @@ class HomeViewController: UIViewController, MKMapViewDelegate, UITableViewDelega
             print("\(searchLocation)")
             Yelp?.search(withLocation: searchLocation, term: searchText, limit: 50, offset: 0, sort: YLPSortType.bestMatched) { (searchResult, error) in
                 if(error != nil) {
-                    
+                    // TODO: show error
                 } else {
-                    self.handleYLPSearchResult(searchResult)
+                    DispatchQueue.main.async{
+                        self.handleYLPSearchResult(searchResult)//TODO: figure out weak self
+                    }
                 }
             }
             
@@ -146,8 +140,9 @@ class HomeViewController: UIViewController, MKMapViewDelegate, UITableViewDelega
     private func handleYLPSearchResult(_ searchResult: YLPSearch?) {
         if let businessArray = searchResult?.businesses {
             if let filteredArray = self.filterOutNonFoodTrucks(businessArray) {
-                self.searchResultsArray = filteredArray//TODO: figure out weak self
-                self.reloadTableAndAddAnnotationsToMap()
+                self.searchResultsArray = filteredArray
+                self.table.reloadData()
+                self.addAnnotationsFromArray(businessArray: filteredArray)
             } else {
                 // TODO: alert no businesses matched your results
             }
@@ -170,6 +165,25 @@ class HomeViewController: UIViewController, MKMapViewDelegate, UITableViewDelega
             return nil
         } else {
             return foodtrucks
+        }
+    }
+    
+    private func addAnnotationsFromArray(businessArray:[YLPBusiness]!) {
+        //reset map annotations
+        map.removeAnnotations(map.annotations)
+        
+        for business in businessArray {
+            if let YLPCoordinate = business.location.coordinate {
+                let coordinate = CLLocationCoordinate2D.init(latitude: YLPCoordinate.latitude, longitude: YLPCoordinate.longitude)
+                let annotation = MKPointAnnotation()
+                annotation.title = business.name
+                
+                annotation.coordinate = CLLocationCoordinate2D.init(latitude: coordinate.latitude, longitude: coordinate.longitude)
+                map.addAnnotation(annotation)
+                
+            } else {
+                
+            }
         }
     }
     
