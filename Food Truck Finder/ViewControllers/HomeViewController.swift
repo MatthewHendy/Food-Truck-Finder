@@ -15,6 +15,7 @@ class HomeViewController: UIViewController, MKMapViewDelegate, UITableViewDelega
     
     private let filterFood_Trucks = "Food Trucks"
     private let filterfoodtruck = "foodtrucks"
+    private let searchResultCell = "searchResultCell"
     
     @IBOutlet weak var map: MKMapView!
     @IBOutlet weak var tableHeightButton: UIButton!
@@ -41,6 +42,8 @@ class HomeViewController: UIViewController, MKMapViewDelegate, UITableViewDelega
         
         LocationManager.requestWhenInUseAuthorization()
         LocationManager.startUpdatingLocation()
+        
+        table.register(UINib.init(nibName: "SearchResultTableViewCell", bundle: nil), forCellReuseIdentifier: searchResultCell)
         
         self.navigationItem.title = "Food Truck Finder"
     }
@@ -139,6 +142,7 @@ class HomeViewController: UIViewController, MKMapViewDelegate, UITableViewDelega
     
     private func handleYLPSearchResult(_ searchResult: YLPSearch?) {
         if let businessArray = searchResult?.businesses {
+            print(businessArray)
             if let filteredArray = self.filterOutNonFoodTrucks(businessArray) {
                 self.searchResultsArray = filteredArray
                 self.table.reloadData()
@@ -200,12 +204,20 @@ class HomeViewController: UIViewController, MKMapViewDelegate, UITableViewDelega
     
     // MARK: TableView
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1;
+        return searchResultsArray?.count ?? 0;
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell:UITableViewCell = UITableViewCell()
-        return cell
+        var cell = tableView.dequeueReusableCell(withIdentifier: searchResultCell, for: indexPath) as? SearchResultTableViewCell
+        if(cell == nil) {
+            cell = SearchResultTableViewCell()
+        }
+        
+        if let business = searchResultsArray?[indexPath.row] {
+            cell?.configureWithBusiness(business)
+        }
+        
+        return cell!
     }
     
 }
