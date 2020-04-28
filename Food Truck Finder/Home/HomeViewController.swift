@@ -28,7 +28,6 @@ class HomeViewController: UIViewController, MKMapViewDelegate, UITableViewDelega
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
     let LocationManager:CLLocationManager = CLLocationManager.init()
-    var currentLocation:Location!
     
     var searchResultsArray:[YLPBusiness]?
 
@@ -61,39 +60,6 @@ class HomeViewController: UIViewController, MKMapViewDelegate, UITableViewDelega
     // MARK: Location Manager Delegates
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         
-        guard let location = locations.last
-        else {
-            //show an error?
-            // TODO add Alert couldnt get location from location manager
-            print("couldnt get location from location manager")
-            return
-        }
-
-        if let loc = Location.init(loc: location) {
-            currentLocation = loc
-            
-            guard let currentLocLat = currentLocation.getLatitude()
-                else {
-                    // TODO: add alert couldnt unwrap the latitude
-                    print("couldnt unwrap the latitude")
-                    return
-            }
-            
-            guard let currentLocLong = currentLocation.getLongitude()
-                else {
-                    // TODO: add alert couldnt unwrap the longitude
-                    print("couldnt unwrap the longitude")
-                    return
-            }
-
-            self.setMainAreaOnMap(currentLocLat, currentLocLong)
-            LocationManager.stopUpdatingLocation()//only need current location. no need to track movements
-        } else {
-            // TODO: add alert couldnt init the Location object after passing in the CLLocation
-            print("couldnt init the Location object after passing in the CLLocation")
-        }
-        
-        
     }
     
     private func setMainAreaOnMap(_ latitude: CLLocationDegrees, _ longitude:CLLocationDegrees) {
@@ -109,33 +75,6 @@ class HomeViewController: UIViewController, MKMapViewDelegate, UITableViewDelega
     
     //MARK: TextField Delegates
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        if let searchText = textField.text {
-            var searchLocation:String
-            
-            if let city = currentLocation.getCity(), let state = currentLocation.getState() {
-                searchLocation = "\(city), \(state)"
-            } else if let city = currentLocation.getCity() {
-                searchLocation = city
-            } else if let state = currentLocation.getState() {
-                searchLocation = state
-            } else {
-                searchLocation = ""
-            }
-
-            print("\(searchLocation)")
-            Yelp?.search(withLocation: searchLocation, term: searchText, limit: 50, offset: 0, sort: YLPSortType.bestMatched) { (searchResult, error) in
-                if(error != nil) {
-                    // TODO: show error
-                } else {
-                    DispatchQueue.main.async{
-                        self.handleYLPSearchResult(searchResult)//TODO: figure out weak self
-                    }
-                }
-            }
-            
-        } else {
-            //TODO: must enter text alert
-        }
         
         return true
     }

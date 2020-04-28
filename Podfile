@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
- platform :ios, '12.2'
+ platform :ios, '13.3'
 
 target 'Food Truck Finder' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
@@ -7,10 +7,7 @@ target 'Food Truck Finder' do
 
   # Pods for Food Truck Finder
 
-	pod "YelpAPI"
-
-
-
+  pod "YelpAPI"
 
 
   target 'Food Truck FinderTests' do
