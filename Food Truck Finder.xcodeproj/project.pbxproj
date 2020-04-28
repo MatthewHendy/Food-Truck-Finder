@@ -14,7 +14,6 @@
 		FA719E7D228C677200545EB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA719E7C228C677200545EB5 /* AppDelegate.swift */; };
 		FA719E85228C677200545EB5 /* Food_Truck_Finder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA719E83228C677200545EB5 /* Food_Truck_Finder.xcdatamodeld */; };
 		FA719E87228C677400545EB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA719E86228C677400545EB5 /* Assets.xcassets */; };
-		FA719E8A228C677400545EB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA719E88228C677400545EB5 /* LaunchScreen.storyboard */; };
 		FA719E95228C677400545EB5 /* Food_Truck_FinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA719E94228C677400545EB5 /* Food_Truck_FinderTests.swift */; };
 		FA719EA0228C677400545EB5 /* Food_Truck_FinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA719E9F228C677400545EB5 /* Food_Truck_FinderUITests.swift */; };
 		FA719EB0228C6F0000545EB5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA719EAF228C6F0000545EB5 /* HomeViewController.swift */; };
@@ -55,7 +54,6 @@
 		FA719E7C228C677200545EB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA719E84228C677200545EB5 /* Food_Truck_Finder.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Food_Truck_Finder.xcdatamodel; sourceTree = "<group>"; };
 		FA719E86228C677400545EB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FA719E89228C677400545EB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA719E8B228C677400545EB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA719E90228C677400545EB5 /* Food Truck FinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Food Truck FinderTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA719E94228C677400545EB5 /* Food_Truck_FinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food_Truck_FinderTests.swift; sourceTree = "<group>"; };
@@ -167,10 +165,9 @@
 			isa = PBXGroup;
 			children = (
 				FA719E8B228C677400545EB5 /* Info.plist */,
+				FA719E7C228C677200545EB5 /* AppDelegate.swift */,
 				14CD945224589E3B008EC86A /* Misc */,
 				14CD945124589DEE008EC86A /* Home */,
-				FA719E7C228C677200545EB5 /* AppDelegate.swift */,
-				FA719E88228C677400545EB5 /* LaunchScreen.storyboard */,
 			);
 			path = "Food Truck Finder";
 			sourceTree = "<group>";
@@ -301,7 +298,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA719E8A228C677400545EB5 /* LaunchScreen.storyboard in Resources */,
 				FA719E87228C677400545EB5 /* Assets.xcassets in Resources */,
 				FAC852672297A3FA00CB98C8 /* SearchResultTableViewCell.xib in Resources */,
 				FA719EB3228C6F2200545EB5 /* HomeViewController.xib in Resources */,
@@ -458,17 +454,6 @@
 			targetProxy = FA719E9C228C677400545EB5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		FA719E88228C677400545EB5 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FA719E89228C677400545EB5 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		FA719EA2228C677400545EB5 /* Debug */ = {
