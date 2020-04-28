@@ -18,30 +18,24 @@ import YelpAPI
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-    
-    var window: UIWindow?
-    var navController: UINavigationController?
-    
+        
     private let YelpAPIKey = "MEUh_M8l7apQHZBxo4wGZC3SsRvNwGuWPGKAAdz1rZt3T3mXj3hdy9SeENL5_UUYKebBy3c_Ysc8_cVD-ZCPyRn90Efl8OkKVj3LxzGnh06mJwhcc5roLnoSSE_kXHYx"
-    private var Yelp:YLPClient!
-
+    private var yelp: YLPClient!
+    private var homeCoordinator: HomeCoordinator!
+    
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        window = UIWindow(frame: UIScreen.main.bounds)
-        let homeVC = HomeViewController(nibName: "HomeViewController", bundle: nil)
-        navController = UINavigationController(rootViewController: homeVC)
-        window!.rootViewController = navController
-        window!.makeKeyAndVisible()
         
-        Yelp = YLPClient.init(apiKey: YelpAPIKey)
-
+        yelp = YLPClient.init(apiKey: YelpAPIKey)
+        homeCoordinator = HomeCoordinator()
+        homeCoordinator.start()
         
         return true
     }
     
     open func getYelpObject() -> YLPClient {
-        return Yelp
+        return yelp
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

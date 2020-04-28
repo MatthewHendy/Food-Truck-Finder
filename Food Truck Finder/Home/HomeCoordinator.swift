@@ -7,5 +7,18 @@
 //
 
 import Foundation
+import UIKit
 
+class HomeCoordinator: NSObject {
+    
+    var navController: UINavigationController?
+    var window: UIWindow?
 
+    func start() {
+        window = UIWindow(frame: UIScreen.main.bounds)
+        let homeVC = HomeViewController(nibName: "HomeViewController", bundle: nil)
+        navController = UINavigationController(rootViewController: homeVC)
+        window!.rootViewController = navController
+        window!.makeKeyAndVisible()
+    }
+}
