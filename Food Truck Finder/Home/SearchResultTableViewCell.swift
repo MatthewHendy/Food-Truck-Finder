@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-import YelpAPI
+import CDYelpFusionKit
 
 class SearchResultTableViewCell: UITableViewCell {
     
@@ -21,8 +21,8 @@ class SearchResultTableViewCell: UITableViewCell {
         truckImageView.image = nil
     }
     
-    func configureWithBusiness(_ business:YLPBusiness) {
-        if let imageURL = business.imageURL {
+    func configureWithBusiness(_ business: CDYelpBusiness) {
+        if let imageURL = business.imageUrl {
             loadURLIntoImageView(imageURL)
         }
         

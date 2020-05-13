@@ -7,7 +7,7 @@ target 'Food Truck Finder' do
 
   # Pods for Food Truck Finder
 
-  pod "YelpAPI"
+  pod "CDYelpFusionKit"
 
 
   target 'Food Truck FinderTests' do

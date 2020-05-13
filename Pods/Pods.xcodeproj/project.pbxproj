@@ -3,484 +3,854 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		01AB0BC96162DA54BCE61092BDA9852B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		05501B79E27C1FBE5BB0A06E26D32876 /* YLPClient+Search.m in Sources */ = {isa = PBXBuildFile; fileRef = C77ECA3F8BC83D4EB912743D3BA91C61 /* YLPClient+Search.m */; };
-		060CC312B09DD1421353B8BBC2083ED4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		066B69142A9280EFE372B22A5609AE83 /* YLPSortType.h in Headers */ = {isa = PBXBuildFile; fileRef = D62C71A186B19AF56941BD977283C633 /* YLPSortType.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		089BA707288EC6587EEC34D6B4D39F8B /* YLPClient+PhoneSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = D1C106CC8663123E971919E87E5A9085 /* YLPClient+PhoneSearch.m */; };
-		0C1CF5434CE89E568FD561445186D5FE /* NSDictionary+YLPUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = BB462562BAAD53AE5B24CD30EFC334C3 /* NSDictionary+YLPUtils.m */; };
-		0C33798C84EDED24A94D983B497303BD /* YLPBusiness.m in Sources */ = {isa = PBXBuildFile; fileRef = 0527DC8B2E946A15DB5F0A2202136F93 /* YLPBusiness.m */; };
-		10B67C20EE1FD9F205506B839C3194E0 /* YLPLocation.h in Headers */ = {isa = PBXBuildFile; fileRef = D70DA80009B00F5A1532D8CFA773E62C /* YLPLocation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		153ADC8EC709DA53314335E05C53363B /* YLPClient+PhoneSearch.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EA8494BB8F031D55C2BDA03D0DD0C75 /* YLPClient+PhoneSearch.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1CF800986968B6B23CDBD88EE00DF551 /* YLPQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAEFA45A709411A8DCFDF4EE665CC7B /* YLPQuery.m */; };
-		24C73F1A017A13C8231D1A740690B99D /* YLPReview.m in Sources */ = {isa = PBXBuildFile; fileRef = A750247BD5F3B6E2E447E3E209364090 /* YLPReview.m */; };
-		25DE1640A971CCD37E410C35510483F7 /* Pods-Food Truck FinderUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AEB91EA65D868D4774CCEA60AD18AC5A /* Pods-Food Truck FinderUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		266FEB6D7AB73AF98CE658F0AC31BB87 /* YLPBusiness.h in Headers */ = {isa = PBXBuildFile; fileRef = 461A07DF1D915B70E1DF4BD34A1F4726 /* YLPBusiness.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2C95A203EADAAE5755BBAEE624F6EF4B /* YLPUser.m in Sources */ = {isa = PBXBuildFile; fileRef = B15C186360218EEA36A7455F888C25C3 /* YLPUser.m */; };
-		41834E8712AC09590BE39A915DB01957 /* YLPClientPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = F8634169C7F58E4AF33A32DAB3ADC5EE /* YLPClientPrivate.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		53BCD52EE0DB1008B0D5DE74572941AE /* YLPClient.h in Headers */ = {isa = PBXBuildFile; fileRef = EF8F82D3AEAE2F7E0949C174F43451EF /* YLPClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		58836C5360C21072C8EB28D53B98EFE8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		5D33E7B1B38DC682BF9688EFD94EB3F3 /* YelpAPI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 220D44C37B35AD3E87916343DD0DF55F /* YelpAPI-dummy.m */; };
-		630D88DEA5CFEF78BD5F51F5444B11ED /* YLPQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = B4792AFD83A166CE9FF480B1280D7A96 /* YLPQuery.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6437A8D08E75F89A87B1946462372042 /* YLPClient+Reviews.h in Headers */ = {isa = PBXBuildFile; fileRef = 93952B6B202AE9C489C8B3B2FE030916 /* YLPClient+Reviews.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		65276AFB2AAF32830F8249A616A45016 /* YLPClient+Business.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F7D3F68FA8153D2F4905DE72D67D97B /* YLPClient+Business.m */; };
-		7219D279FE73990FDA19A459CA718347 /* YLPClient+Reviews.m in Sources */ = {isa = PBXBuildFile; fileRef = 54088D1A4B8D6370E13BA3AD3A01F1BC /* YLPClient+Reviews.m */; };
-		7DD04AA3D71AF06C1B12F3920BFE2C32 /* YLPCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 2181CDFCF5EAFF1F1A8222AFC7D70576 /* YLPCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		957911FD8CFD46F8AC6F1D4FF0FDCAFB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		976EAA2FBE846001C32808A14E9BD8AB /* Pods-Food Truck Finder-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B79887F0BC905A6D1B79ED12FA54B231 /* Pods-Food Truck Finder-dummy.m */; };
-		98B39E0BCDEEF6D8D3CFF909C0FF7E7E /* YelpAPI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A9AA5CF2174CD5B3D312BDEE4C5ED3B1 /* YelpAPI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AE25182B6120650CAFF886359AF2B23B /* YLPBusinessReviews.h in Headers */ = {isa = PBXBuildFile; fileRef = 89F315D480F75D72EEEDC31AED1C32D0 /* YLPBusinessReviews.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B0D4C212CE40D0E9B867E14AD2A5D046 /* Pods-Food Truck Finder-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BD5C5BC44F45F1F2CA6528AD0FE14053 /* Pods-Food Truck Finder-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B87C6E3EED4A0507C2B7FF4D09A4568D /* YLPUser.h in Headers */ = {isa = PBXBuildFile; fileRef = F8397DC6CD0B0B31971D500A173177EF /* YLPUser.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BA00CFDE90D890E7CDF2AA52CA5723B9 /* YLPResponsePrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E87702ED551066F96E67AD7687D9B08 /* YLPResponsePrivate.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		C44E434B60C93E0C27918FAC531E74BB /* YLPLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = E41A4A88A230C8C16C3AF9F65176F8E0 /* YLPLocation.m */; };
-		C52060C44229822D10FACDA7B2C47D83 /* YLPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 66DBFBCACA5432725BB28A87385E846B /* YLPClient.m */; };
-		C59505531B3525E5906B239C2DC89E57 /* YLPSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD8141F2C21984B23441FD78E539A26 /* YLPSearch.m */; };
-		C66216258D2B622B2EDBDC60211D8CB3 /* YLPSearch.h in Headers */ = {isa = PBXBuildFile; fileRef = 470529250AE5710C00F103FDDF1C7E4C /* YLPSearch.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CD5E39AC8960C42CA2B1EAA02CD8F895 /* YLPClient+Search.h in Headers */ = {isa = PBXBuildFile; fileRef = AB234DCDF843D7E5017B75475348EF59 /* YLPClient+Search.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CE0B39CE59297C5905D474B2D6ACD07C /* YLPCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFCA0637BB9689BD4E56694A921E0E7 /* YLPCategory.m */; };
-		CE7DB7120F11B68EC82142BF392C74C2 /* YLPReview.h in Headers */ = {isa = PBXBuildFile; fileRef = F678E93E295FBCBC0AF8382F7243C459 /* YLPReview.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D00D84572384FC3887CD31052F286C19 /* YLPQueryPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 926D51D0586BEB94CC366875E9C96720 /* YLPQueryPrivate.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		D1AE1226C62053A580065D18C6DA3FC4 /* Pods-Food Truck FinderTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BB302BF65FD8BAB27E0A39667BA36DBA /* Pods-Food Truck FinderTests-dummy.m */; };
-		D5F9A3F86156870BB287DEABABCC8B67 /* YLPCoordinate.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D3E14924656CC71F88D8701B4B552C6 /* YLPCoordinate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D6C406B68AA0A16C180FE61667963EA8 /* YLPCoordinate.m in Sources */ = {isa = PBXBuildFile; fileRef = 848F1DEE47D05C1CE7F0E0C5837FF622 /* YLPCoordinate.m */; };
-		D7C6014EF96600CD17FCD3E95CA0452B /* Pods-Food Truck FinderUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EB0C9D6C8915E3B66EEC256231610432 /* Pods-Food Truck FinderUITests-dummy.m */; };
-		DE82FA13B33A865D3C70CDB524BEBA89 /* Pods-Food Truck FinderTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C0C31B1B8730B0F8E0DF9B9C699FEF7F /* Pods-Food Truck FinderTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EBA0CDBF61484FCB7F020C381E00482E /* YLPClient+Business.h in Headers */ = {isa = PBXBuildFile; fileRef = 96518F95B02B1EB0AD699D0E6B814B10 /* YLPClient+Business.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F4BFD5721525B9A274CEB39FDA65FAC3 /* YelpAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 02C1534DA76A5DE6FF25052D94926D46 /* YelpAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F59BC466BE64D5842173E3E6BFC0160A /* YLPBusinessReviews.m in Sources */ = {isa = PBXBuildFile; fileRef = E4B086B64664F03278B04B4AA73B0694 /* YLPBusinessReviews.m */; };
+		003BC94FA0629F27D07D56F25BDECCFB /* CDYelpHour.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7310235C30F48F6CBA52FA2D2F664F1 /* CDYelpHour.swift */; };
+		094E89BCC06E6855EB19650736CDAC40 /* CDYelpBusiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53026AFEC3967DD35D78AB251DD76850 /* CDYelpBusiness.swift */; };
+		0C02ABEC760BF80131B37D63C73BE26B /* ObjectMapper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0356362B95C5E028155F35E020A2851B /* ObjectMapper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0C5E11DE24DAA737704B355F5F2F3426 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998800D853DF752E02758F42D8E0065A /* ParameterEncoding.swift */; };
+		0DDE607E5509DE5093A4D9361CE7BEFB /* Pods-Food Truck FinderTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E7C2F98AA96538E7F94914F82F0F5F8 /* Pods-Food Truck FinderTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1251ABF8613A45A93CF7198E944EFA1D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E09E341ACB852643F054CAF8690AFAC4 /* Foundation.framework */; };
+		1270F4E601423EF36FE824207169002A /* CodableTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA2F9609B154DCEF56759F80B4E3774 /* CodableTransform.swift */; };
+		132E0F619E4338E5D1B27E4C72076B3F /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034ADA60E45F8CE3AE86F630987F47DE /* Notifications.swift */; };
+		14C387ABBD97175D4792C8E128B91595 /* Pods-Food Truck FinderUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 865ABF1C4E8EC4E5BFE2AB1B4CD51552 /* Pods-Food Truck FinderUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		191BFAE8CB14A744F13247EC6F51A78D /* CDYelpCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666EA01DAA420B06063876FFB203383C /* CDYelpCategory.swift */; };
+		1945CD5D63A1C164AEAAA9A33E85571E /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D7D9F32B558141C56AE3335188BB99B3 /* Alamofire-dummy.m */; };
+		1986B50C74F1697EA43F68335C93CEB3 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F95CB46CBE66E4D4F04999C98A583CF /* MultipartFormData.swift */; };
+		19A14163D1B85BA2674C47C08DD42F3B /* EnumOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9814EC830B580EA536BF861C3AEFC721 /* EnumOperators.swift */; };
+		1A6FB23F6D6908396FB5FE61D9A76FB5 /* URLTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621936FF71890C9ECFC76BEC5F2C0B7F /* URLTransform.swift */; };
+		1C4E35F55A6329617D438B149650AD87 /* Mappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B5FE3AB23A07EE0B9C373347563F92 /* Mappable.swift */; };
+		1CCE747994C6FA4BE94B68403ECB55FA /* CDYelpFusionKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 197E170A32982C80771ECA227AC2B9FB /* CDYelpFusionKit-dummy.m */; };
+		1F2BAD1D167F82484E3D010E0263AFC8 /* AlamofireObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CF465F510C657CACFFEABB60106FFF0 /* AlamofireObjectMapper.framework */; };
+		21B906EE1C7B9C708BC80A6D68503B26 /* String+CDYelpFusionKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A0017F822F2068476BB8AFCBF77BF /* String+CDYelpFusionKit.swift */; };
+		23927648BDBC1C1FAE533B9132701987 /* CDYelpRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0458B5EC20AC0D230E40059BA419DA2 /* CDYelpRegion.swift */; };
+		24F808E4F13F5CBCA840B14274D86E74 /* CDYelpFusionKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C904110ACC588EE24CF30C530D8CB80 /* CDYelpFusionKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		28493F658DEDD649A8177A3753755022 /* CDYelpAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BB835EF832D047EACCA3A90542695D /* CDYelpAPIClient.swift */; };
+		28FB7D2AE173D7A32B3866FC2CBF587B /* AlamofireObjectMapper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A5219F1957F392EFAA3CC513354B207 /* AlamofireObjectMapper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C61B040BA6A9A7AE66C4D9BA26D5520 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338DC5623558E58F135D1F00DB397600 /* SessionDelegate.swift */; };
+		2FCE485888577CE5E69636C3FEA27229 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E09E341ACB852643F054CAF8690AFAC4 /* Foundation.framework */; };
+		3509D673F0ED2ECC73FC824F4E9E696E /* Pods-Food Truck FinderUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C4BAE453CA44A1752C7210C0E73ED0F0 /* Pods-Food Truck FinderUITests-dummy.m */; };
+		3571F958A3907B3A806E62D50C2550D4 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C2D14D299B309E5CC933F6BD82B1F9 /* NetworkReachabilityManager.swift */; };
+		35E83A665A651C6E91363E92B1434AB8 /* Pods-Food Truck Finder-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 66C9A84B655CF5BB92149BA021385ACA /* Pods-Food Truck Finder-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38BF4EEFE885A6E3BA892C96F24F8723 /* IntegerOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0B582630E0C19F22FC1A34C70D088F /* IntegerOperators.swift */; };
+		3D290631D1092DEB36C3915B51340296 /* CDYelpTerm.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA897E248DDD29940DFF3AD439968DF /* CDYelpTerm.swift */; };
+		43D2607D4FC1D4991DB364E719510F1D /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63B19DB960098182BE202226F0DA20EC /* Alamofire.framework */; };
+		449FF0C4FB7DD4920077D158FD6ED572 /* CDColor+CDYelpFusionKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4015FA0E70877B26A00A879F776AF84 /* CDColor+CDYelpFusionKit.swift */; };
+		4C6D5D1CC894D8853ACBF2FB5FE40EC5 /* EnumTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA249A2F6265ECF0915CA0175F58AB7A /* EnumTransform.swift */; };
+		4D40C323A0AA66836903ACAD40A2ADF7 /* CDYelpSearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17547449660F8F3CA16A49FB79B4E17 /* CDYelpSearchResponse.swift */; };
+		536AE5E0C47A0C546EF96C64C2BC819A /* AlamofireObjectMapper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D0ABD05C4C35CF13DF403A470EC93A /* AlamofireObjectMapper-dummy.m */; };
+		53791F5E5F07400F92CFDFC89A432305 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862E64296E66A6CFC9A0E61E9073A26B /* Validation.swift */; };
+		581E42349FAD9A3B48E5B2E97DC40EB1 /* CDColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C694BA1AA275A74D0CE343EF37EF0CF2 /* CDColor.swift */; };
+		61CFA5456E6B3B612AFBE85C6C9D4D10 /* HexColorTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFC6430B740945A1F8111C77C4987CD /* HexColorTransform.swift */; };
+		64744C911253C3E01461FAD7C935C8D7 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35821DB0482137FE17306F561062DBD6 /* Result.swift */; };
+		71D527C5D04EA2077894115DF92E3E4B /* CDYelpAutoCompleteResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E121A60F228E47817C99D67F4F34436 /* CDYelpAutoCompleteResponse.swift */; };
+		72E902B0D6D593657CC38405EE1118A1 /* TransformOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377D05E02B11999596C9C0E2B5294437 /* TransformOf.swift */; };
+		7664FD4F59A0C00866CBAE60B0A3AD64 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E09E341ACB852643F054CAF8690AFAC4 /* Foundation.framework */; };
+		787889719C266AB1DF83F53100649F2E /* CDImage+CDYelpFusionKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0166B70953D629CA02E6928343DC96 /* CDImage+CDYelpFusionKit.swift */; };
+		7AA1A5A48A4182B11CFA792714C82631 /* TransformType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9FD7AC5A58B28235551857A2EC5E0C /* TransformType.swift */; };
+		7FBF6626FC5EFF4FBDE27F192BD0FE1C /* AlamofireObjectMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4069618F8E52961B94F8EF736EDD5E /* AlamofireObjectMapper.swift */; };
+		83956E20859CDBBE7BC38ABADE0170FB /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4B206B94EB4A4B2191A46D8F7545E4 /* AFError.swift */; };
+		895099418459BE38A5EAAA68CE72C491 /* CDYelpUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4879220D2CA5F1CC348F6723D05105B0 /* CDYelpUser.swift */; };
+		89B2A15EBCAC53BC2037677ACBE7284D /* CDYelpLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA7E972E3A9247DB93C7CA09D2954EF /* CDYelpLocation.swift */; };
+		9143E20A63CFBC740AECDCFE909F5A33 /* FromJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8E065BC4D8E9ACD8FAD881171B766D /* FromJSON.swift */; };
+		91BA956F3C83DD73EDC9E6842FAFA5C1 /* NSDecimalNumberTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD7588EAA4DBCBD9F5ED8FDA66E8FCE /* NSDecimalNumberTransform.swift */; };
+		931BBB8230A25161D5C37528A8F9FECF /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CDBF0E126A7C81775BE131F12D2AD9 /* SessionManager.swift */; };
+		933FDA5970AA525D6CB92BFEBA2BAB4A /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856D9162668E3F25BEA7DC0EF0065AF1 /* Timeline.swift */; };
+		937FC411CB6833D68407CFC5F97CE68D /* TransformOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA95E5253D1960A94BE29ADFEC9430B /* TransformOperators.swift */; };
+		98A929C8E9012AB167672714FFD2113C /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE4E7305A3E6BF2E8DBCB5A35F06537 /* Request.swift */; };
+		9B05BDBC1B882D02C0D5A2610AD1B76A /* CDYelpConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7416989CE57742E9D70854828E417B5D /* CDYelpConstants.swift */; };
+		9B2DD2DF549A13CF73C58423F6CEDB90 /* CDYelpReviewsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6641DC64CE398B0105F293E177F24353 /* CDYelpReviewsResponse.swift */; };
+		9FC40D9C897357BAA5979D32410BBB8F /* CDYelpError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DDA86692D1FE48CC97188B8E671C28 /* CDYelpError.swift */; };
+		A13448FDE83106326250D09DFC08E4C2 /* CDYelpCoordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07BF780BC77DB8FD9D34BDF1B1CB204 /* CDYelpCoordinates.swift */; };
+		A18477E61881F5B1F0FCA4CA2667DCBC /* DataTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA72FF5BE5FEBB8446AC47B219D9A097 /* DataTransform.swift */; };
+		A5AA0CB9BFE983E769FEBB95186787A4 /* MapError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E923EB352F3CDF5934CDA6AB42D7270 /* MapError.swift */; };
+		A5DAEB5895FF59F714280329E8C57645 /* CDYelpReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87314150D910B63FFC09BA23BDC34B7D /* CDYelpReview.swift */; };
+		A68986E13F5E041F5BA4A6AA4D5B9455 /* CustomDateFormatTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D77CA51945FCBAA22589D3153DCC98E /* CustomDateFormatTransform.swift */; };
+		AB8E2E1B150FD7C2D1336F2DD8B48853 /* DateFormatterTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596284DA34E80FC5A7C8B485A3FBA183 /* DateFormatterTransform.swift */; };
+		ACF095BC811F628AC6108B6A718E8A82 /* CDYelpEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5A61E069A77716B8AE134A8BC99161 /* CDYelpEnums.swift */; };
+		AFC64B1097F7355FF423D6A73E9C7210 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C342A2C49FCE644DAD6FCEFAE759B2AA /* TaskDelegate.swift */; };
+		B24574B1B035F12593EFB4E40BB8CFE3 /* CDYelpBusinessResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E0BF1B082A4DC89C8066DFB1176456 /* CDYelpBusinessResponse.swift */; };
+		B28A92AA7D5CE9A97C4AABBFADA59EDD /* DateTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF5260B430F2FCCAFF11ADE76FA7EF0 /* DateTransform.swift */; };
+		B4762756F64C661592645D32D87ECA8C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E09E341ACB852643F054CAF8690AFAC4 /* Foundation.framework */; };
+		B671F3658F354AFEEF6D5E14A12A6D2B /* CDImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB8B0E2511B72B6A8957695CDD80339 /* CDImage.swift */; };
+		B818D46A3665C6DA932C621A0C03CF87 /* CDYelpOpen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E7F3FB8E7FD046CBC2E1F4B1BD5BDD /* CDYelpOpen.swift */; };
+		BED733B9F9DCD421252341AE86A94351 /* URL+CDYelpFusionKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E106311CA8A7CC73F57684DEA8364F2 /* URL+CDYelpFusionKit.swift */; };
+		BEE6B677416CA71C981D1D3F60B18C96 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FA44BEFC3D55154A47A59BB176647A /* Alamofire.swift */; };
+		C0B393B80CD971349123D9F02DFDD554 /* ImmutableMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7898CB575EE3597349D8B8005CD8E18F /* ImmutableMappable.swift */; };
+		C2E72CE21C3B17F03B7C998BAA32EB51 /* CDYelpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC346E0BEEF09EC3AB9C963F04463223 /* CDYelpRouter.swift */; };
+		CD7E9B96B8B49215D4E1F99DE1F2821C /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F20C3FDE079648E81C93F7D265547FE /* Map.swift */; };
+		CFD70C4512BE496D2CFA66C1F07D0743 /* ObjectMapper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 89915FEA83C6A8018FA4369B6AF1CC44 /* ObjectMapper-dummy.m */; };
+		D15DDC006C55D897E728B576AC48521C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B7C1327AA655F42DF01068600FF0104 /* Images.xcassets */; };
+		D298E3A34E428388DEF4B1708F23BE55 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974E57A38402F2C47E34A890F488C426 /* Operators.swift */; };
+		D3D8C379C6E4FB487E5ABD6800AD7B7E /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3350093A593B2873469423453DA8A74 /* DispatchQueue+Alamofire.swift */; };
+		D65C254F5ABF2CB5ECEE50FE8F8E1A80 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABB2384BC6A5F13974DA150CC8C839F /* Response.swift */; };
+		D77545145A5D9E4053D6A121CED76362 /* ToJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8788D96683BA996B123C9CF880B3487 /* ToJSON.swift */; };
+		DF195FBE065E1FF6AFDB52E63858F916 /* Parameters+CDYelpFusionKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63827E5B85562D4901ACBA72A9C9887 /* Parameters+CDYelpFusionKit.swift */; };
+		E0C1244422C284ED4A6CA575318EE275 /* ISO8601DateTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719409B3B0A00C845AD7D2489751DA70 /* ISO8601DateTransform.swift */; };
+		E3747EC31FCCA97D75A81FC700CF7E24 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4338A5C7AD48C9A9B76D48A25248471A /* ResponseSerialization.swift */; };
+		E7CF1525E0849DCF07DE424084B6EF8E /* CDYelpEventsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D1CDC075B82B4287C35887176D6031 /* CDYelpEventsResponse.swift */; };
+		ED21E2ED18F14021FD468CEED75B7852 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E09E341ACB852643F054CAF8690AFAC4 /* Foundation.framework */; };
+		EE7F0572D98EDED49AFD713D0D226587 /* CDYelpEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35623D398626F9B1B15D80472895926 /* CDYelpEvent.swift */; };
+		EE97F345DCB9A549EF71232B8B19C421 /* DictionaryTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209698274789F46E64829DBABC445459 /* DictionaryTransform.swift */; };
+		EFB76CB2F49173BCA52882487998F27F /* CDYelpCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C82EC2D4FD1A9FE2B3C0F1B075C9FE /* CDYelpCenter.swift */; };
+		EFCFEA352CAFDBC727796700FBCE7A99 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E09E341ACB852643F054CAF8690AFAC4 /* Foundation.framework */; };
+		F13F2AA7F2E6D95A181CAB99B900D531 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C7D216AD14895D5DCDA689693D96D4 /* ServerTrustPolicy.swift */; };
+		F2D4806385A7E84C6FFCFEB93C089B0F /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0904EC1F137B131662A07BE6B48652 /* Mapper.swift */; };
+		F3C822A5B0B643213C171930EF0FD33C /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808C4E5F0E2C0355633C640809D6B2D6 /* ObjectMapper.framework */; };
+		F3DA88A4C2F679ED9797294C5F5F8A3C /* Pods-Food Truck Finder-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AC726EAD6B3927D169EF9270965475BC /* Pods-Food Truck Finder-dummy.m */; };
+		F7B74645E07C39771156A1FA413B98D4 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CADA65801B9323E187B3316B476B6038 /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FDBB7F97BED9A16CB2EA680DD58BF86B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E09E341ACB852643F054CAF8690AFAC4 /* Foundation.framework */; };
+		FE5B2D17567216CF483CB72B14F3803A /* Pods-Food Truck FinderTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D50EA0E80B08917CCEAD3157F9BF38D /* Pods-Food Truck FinderTests-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1D5F54D61B6DEB6C37A90286C1B00677 /* PBXContainerItemProxy */ = {
+		24DE6173B44684115CF7F41F9229E490 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = AA22BA8C24D09C12F40D7A454330748F;
+			remoteGlobalIDString = 162E649F50FEC62B61BDD87D1BD422B4;
+			remoteInfo = ObjectMapper;
+		};
+		2B5B9CFCA2AC3B3E62C6EB62D92E41BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CFC6657E0C09685939209499FFE37DEA;
 			remoteInfo = "Pods-Food Truck Finder";
 		};
-		890313A44AA211CE534EB7CB945CB2E0 /* PBXContainerItemProxy */ = {
+		5B5E6DC32B15CF44B2E5B611E6570BB2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 3D5A00ABE2580BA3083154F9468461C8;
-			remoteInfo = YelpAPI;
+			remoteGlobalIDString = EAAA1AD3A8A1B59AB91319EE40752C6D;
+			remoteInfo = Alamofire;
 		};
-		D96A81D07AF8F800C59F5F53E00E54EB /* PBXContainerItemProxy */ = {
+		5ECF06DB1D5F0B0EB4082D2C0AE76ED0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = AA22BA8C24D09C12F40D7A454330748F;
+			remoteGlobalIDString = EAAA1AD3A8A1B59AB91319EE40752C6D;
+			remoteInfo = Alamofire;
+		};
+		6A5CBFCE22C558CA118E6C16210B5CA3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CFC6657E0C09685939209499FFE37DEA;
 			remoteInfo = "Pods-Food Truck Finder";
+		};
+		8353D1A58CE282A123287470DD380D89 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F64080413BB03C0B16BFEB621E6E0F2;
+			remoteInfo = AlamofireObjectMapper;
+		};
+		B9048CE5B9623452DB8CA8AEEBF49CEE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B81886F7291136528801E32127D98474;
+			remoteInfo = CDYelpFusionKit;
+		};
+		E3DD0258E27C9B451F8423B1E80881BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F64080413BB03C0B16BFEB621E6E0F2;
+			remoteInfo = AlamofireObjectMapper;
+		};
+		F39709105C89A2EC0D9704C112AF51B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 162E649F50FEC62B61BDD87D1BD422B4;
+			remoteInfo = ObjectMapper;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		02C1534DA76A5DE6FF25052D94926D46 /* YelpAPI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YelpAPI.h; path = Classes/YelpAPI.h; sourceTree = "<group>"; };
-		0527DC8B2E946A15DB5F0A2202136F93 /* YLPBusiness.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YLPBusiness.m; path = Classes/Response/YLPBusiness.m; sourceTree = "<group>"; };
-		0AAEFA45A709411A8DCFDF4EE665CC7B /* YLPQuery.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YLPQuery.m; path = Classes/Request/YLPQuery.m; sourceTree = "<group>"; };
-		0B5FC5E014F576CADD75503431A8D90C /* Pods-Food Truck Finder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Food Truck Finder.debug.xcconfig"; sourceTree = "<group>"; };
-		0C72D7ED465F78CB42C71BE84C330B9E /* Pods_Food_Truck_Finder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Food_Truck_Finder.framework; path = "Pods-Food Truck Finder.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1A49BEBF2D6A592520C2900031385D23 /* Pods-Food Truck FinderUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Food Truck FinderUITests.release.xcconfig"; sourceTree = "<group>"; };
-		1B4B8B9B336DBB278D41F4FE609662F3 /* Pods-Food Truck Finder-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Food Truck Finder-Info.plist"; sourceTree = "<group>"; };
-		1F13FCE5C0CF691AF780EBF3E09F6C7C /* Pods-Food Truck FinderUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Food Truck FinderUITests.modulemap"; sourceTree = "<group>"; };
-		2181CDFCF5EAFF1F1A8222AFC7D70576 /* YLPCategory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YLPCategory.h; path = Classes/Response/YLPCategory.h; sourceTree = "<group>"; };
-		220D44C37B35AD3E87916343DD0DF55F /* YelpAPI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YelpAPI-dummy.m"; sourceTree = "<group>"; };
-		254AC259D3C8B123D7798322666BB830 /* Pods-Food Truck FinderTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Food Truck FinderTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		2E87702ED551066F96E67AD7687D9B08 /* YLPResponsePrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YLPResponsePrivate.h; path = Classes/Response/YLPResponsePrivate.h; sourceTree = "<group>"; };
-		2EA8494BB8F031D55C2BDA03D0DD0C75 /* YLPClient+PhoneSearch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "YLPClient+PhoneSearch.h"; path = "Classes/Client/YLPClient+PhoneSearch.h"; sourceTree = "<group>"; };
-		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		3735EFA445160B752D4451F98CC0BF2E /* Pods-Food Truck FinderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Food Truck FinderTests.debug.xcconfig"; sourceTree = "<group>"; };
-		3AF46BB1C38FA4947AD6721E2FC28AEA /* Pods_Food_Truck_FinderUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Food_Truck_FinderUITests.framework; path = "Pods-Food Truck FinderUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3DEFF5119254D7F16EF0ADE734D9BA29 /* Pods-Food Truck Finder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Food Truck Finder.release.xcconfig"; sourceTree = "<group>"; };
-		3E50ADCCDCA0E4F834C2C4C3FBB57FD8 /* Pods-Food Truck Finder-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Food Truck Finder-frameworks.sh"; sourceTree = "<group>"; };
-		461A07DF1D915B70E1DF4BD34A1F4726 /* YLPBusiness.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YLPBusiness.h; path = Classes/Response/YLPBusiness.h; sourceTree = "<group>"; };
-		470529250AE5710C00F103FDDF1C7E4C /* YLPSearch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YLPSearch.h; path = Classes/Response/YLPSearch.h; sourceTree = "<group>"; };
-		4F0D1D67C3FE9C3181B3C1BB572F2BEC /* Pods-Food Truck FinderTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Food Truck FinderTests-Info.plist"; sourceTree = "<group>"; };
-		54088D1A4B8D6370E13BA3AD3A01F1BC /* YLPClient+Reviews.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "YLPClient+Reviews.m"; path = "Classes/Client/YLPClient+Reviews.m"; sourceTree = "<group>"; };
-		5E56CF4CA9D9BBFDC0534DA89C539D14 /* YelpAPI-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YelpAPI-prefix.pch"; sourceTree = "<group>"; };
-		66DBFBCACA5432725BB28A87385E846B /* YLPClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YLPClient.m; path = Classes/Client/YLPClient.m; sourceTree = "<group>"; };
-		6F7D3F68FA8153D2F4905DE72D67D97B /* YLPClient+Business.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "YLPClient+Business.m"; path = "Classes/Client/YLPClient+Business.m"; sourceTree = "<group>"; };
-		7A90CE6CC27A9588E65CD423C73F0AFC /* Pods-Food Truck FinderTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Food Truck FinderTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		7AD03F01A83AFFC42BA5B3E5B78B2F23 /* Pods_Food_Truck_FinderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Food_Truck_FinderTests.framework; path = "Pods-Food Truck FinderTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		81C8B535D0D5C571D05869B9BE3D45DE /* Pods-Food Truck Finder-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Food Truck Finder-acknowledgements.plist"; sourceTree = "<group>"; };
-		848F1DEE47D05C1CE7F0E0C5837FF622 /* YLPCoordinate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YLPCoordinate.m; path = Classes/Common/YLPCoordinate.m; sourceTree = "<group>"; };
-		89AE7C16795828782502BC5E388FAB41 /* YelpAPI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = YelpAPI.modulemap; sourceTree = "<group>"; };
-		89F315D480F75D72EEEDC31AED1C32D0 /* YLPBusinessReviews.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YLPBusinessReviews.h; path = Classes/Response/YLPBusinessReviews.h; sourceTree = "<group>"; };
-		926D51D0586BEB94CC366875E9C96720 /* YLPQueryPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YLPQueryPrivate.h; path = Classes/Request/YLPQueryPrivate.h; sourceTree = "<group>"; };
-		93952B6B202AE9C489C8B3B2FE030916 /* YLPClient+Reviews.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "YLPClient+Reviews.h"; path = "Classes/Client/YLPClient+Reviews.h"; sourceTree = "<group>"; };
-		96378F2A8BCB7054EE4382BC935EBBBC /* Pods-Food Truck FinderUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Food Truck FinderUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		96518F95B02B1EB0AD699D0E6B814B10 /* YLPClient+Business.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "YLPClient+Business.h"; path = "Classes/Client/YLPClient+Business.h"; sourceTree = "<group>"; };
-		9D3E14924656CC71F88D8701B4B552C6 /* YLPCoordinate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YLPCoordinate.h; path = Classes/Common/YLPCoordinate.h; sourceTree = "<group>"; };
+		034ADA60E45F8CE3AE86F630987F47DE /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
+		0356362B95C5E028155F35E020A2851B /* ObjectMapper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ObjectMapper-umbrella.h"; sourceTree = "<group>"; };
+		07FA44BEFC3D55154A47A59BB176647A /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		0A5219F1957F392EFAA3CC513354B207 /* AlamofireObjectMapper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AlamofireObjectMapper-umbrella.h"; sourceTree = "<group>"; };
+		0CF465F510C657CACFFEABB60106FFF0 /* AlamofireObjectMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AlamofireObjectMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		11C82EC2D4FD1A9FE2B3C0F1B075C9FE /* CDYelpCenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CDYelpCenter.swift; path = Source/CDYelpCenter.swift; sourceTree = "<group>"; };
+		13E0BF1B082A4DC89C8066DFB1176456 /* CDYelpBusinessResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CDYelpBusinessResponse.swift; path = Source/CDYelpBusinessResponse.swift; sourceTree = "<group>"; };
+		197E170A32982C80771ECA227AC2B9FB /* CDYelpFusionKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CDYelpFusionKit-dummy.m"; sourceTree = "<group>"; };
+		19D0ABD05C4C35CF13DF403A470EC93A /* AlamofireObjectMapper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AlamofireObjectMapper-dummy.m"; sourceTree = "<group>"; };
+		1ABCCE42FFC2F60091AC7E2153F10BE9 /* Pods_Food_Truck_Finder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Food_Truck_Finder.framework; path = "Pods-Food Truck Finder.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B446FB0FF6B38899F166573DD18E32F /* CDYelpFusionKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CDYelpFusionKit-prefix.pch"; sourceTree = "<group>"; };
+		1BC11326B1484B8B70E86B284FA43DE0 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		1D50EA0E80B08917CCEAD3157F9BF38D /* Pods-Food Truck FinderTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Food Truck FinderTests-dummy.m"; sourceTree = "<group>"; };
+		1E0B582630E0C19F22FC1A34C70D088F /* IntegerOperators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IntegerOperators.swift; path = Sources/IntegerOperators.swift; sourceTree = "<group>"; };
+		1E106311CA8A7CC73F57684DEA8364F2 /* URL+CDYelpFusionKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URL+CDYelpFusionKit.swift"; path = "Source/URL+CDYelpFusionKit.swift"; sourceTree = "<group>"; };
+		209698274789F46E64829DBABC445459 /* DictionaryTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DictionaryTransform.swift; path = Sources/DictionaryTransform.swift; sourceTree = "<group>"; };
+		26CDBF0E126A7C81775BE131F12D2AD9 /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
+		2BA025190445A2566F0888B763A1B6AB /* Pods_Food_Truck_FinderUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Food_Truck_FinderUITests.framework; path = "Pods-Food Truck FinderUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3353BBEB0C52ECC612D86E75BB6791D7 /* Pods-Food Truck FinderUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Food Truck FinderUITests-Info.plist"; sourceTree = "<group>"; };
+		338DC5623558E58F135D1F00DB397600 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
+		35821DB0482137FE17306F561062DBD6 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
+		377D05E02B11999596C9C0E2B5294437 /* TransformOf.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransformOf.swift; path = Sources/TransformOf.swift; sourceTree = "<group>"; };
+		4338A5C7AD48C9A9B76D48A25248471A /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		4879220D2CA5F1CC348F6723D05105B0 /* CDYelpUser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CDYelpUser.swift; path = Source/CDYelpUser.swift; sourceTree = "<group>"; };
+		48A721C9AD4EC648CE20A53273E8D99F /* Pods-Food Truck FinderUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Food Truck FinderUITests.modulemap"; sourceTree = "<group>"; };
+		48B5FE3AB23A07EE0B9C373347563F92 /* Mappable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Mappable.swift; path = Sources/Mappable.swift; sourceTree = "<group>"; };
+		4B0915D6B00924A47676AB182CCEECFA /* CDYelpFusionKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CDYelpFusionKit.xcconfig; sourceTree = "<group>"; };
+		4D77CA51945FCBAA22589D3153DCC98E /* CustomDateFormatTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomDateFormatTransform.swift; path = Sources/CustomDateFormatTransform.swift; sourceTree = "<group>"; };
+		4F20C3FDE079648E81C93F7D265547FE /* Map.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Map.swift; path = Sources/Map.swift; sourceTree = "<group>"; };
+		4F24D0A4836199215E1A3D126C6F2545 /* Pods-Food Truck FinderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Food Truck FinderTests.debug.xcconfig"; sourceTree = "<group>"; };
+		51DDA86692D1FE48CC97188B8E671C28 /* CDYelpError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CDYelpError.swift; path = Source/CDYelpError.swift; sourceTree = "<group>"; };
+		53026AFEC3967DD35D78AB251DD76850 /* CDYelpBusiness.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CDYelpBusiness.swift; path = Source/CDYelpBusiness.swift; sourceTree = "<group>"; };
+		53BA0BA9AC1898CAA326AEA727D324CC /* AlamofireObjectMapper.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AlamofireObjectMapper.xcconfig; sourceTree = "<group>"; };
+		596284DA34E80FC5A7C8B485A3FBA183 /* DateFormatterTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateFormatterTransform.swift; path = Sources/DateFormatterTransform.swift; sourceTree = "<group>"; };
+		5B28A4DA3DA46D103087CBF4E4F04E6E /* Pods-Food Truck FinderTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Food Truck FinderTests-Info.plist"; sourceTree = "<group>"; };
+		5B7C1327AA655F42DF01068600FF0104 /* Images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Resources/Images.xcassets; sourceTree = "<group>"; };
+		5BD3BC7DD4C52B8E453E2DC70B592A8C /* Pods-Food Truck FinderTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Food Truck FinderTests.modulemap"; sourceTree = "<group>"; };
+		5BD7588EAA4DBCBD9F5ED8FDA66E8FCE /* NSDecimalNumberTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSDecimalNumberTransform.swift; path = Sources/NSDecimalNumberTransform.swift; sourceTree = "<group>"; };
+		5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D9FD7AC5A58B28235551857A2EC5E0C /* TransformType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransformType.swift; path = Sources/TransformType.swift; sourceTree = "<group>"; };
+		621936FF71890C9ECFC76BEC5F2C0B7F /* URLTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLTransform.swift; path = Sources/URLTransform.swift; sourceTree = "<group>"; };
+		62DE9FD837C629B44CA95230FEB763E6 /* ObjectMapper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ObjectMapper-prefix.pch"; sourceTree = "<group>"; };
+		63B19DB960098182BE202226F0DA20EC /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		640B3087AFEA06B3B45A2D2713F09B35 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		6641DC64CE398B0105F293E177F24353 /* CDYelpReviewsResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CDYelpReviewsResponse.swift; path = Source/CDYelpReviewsResponse.swift; sourceTree = "<group>"; };
+		666EA01DAA420B06063876FFB203383C /* CDYelpCategory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CDYelpCategory.swift; path = Source/CDYelpCategory.swift; sourceTree = "<group>"; };
+		66C9A84B655CF5BB92149BA021385ACA /* Pods-Food Truck Finder-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Food Truck Finder-umbrella.h"; sourceTree = "<group>"; };
+		6AFEF4630F66B4265A0263AA6B062127 /* Alamofire-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Alamofire-Info.plist"; sourceTree = "<group>"; };
+		6D5A61E069A77716B8AE134A8BC99161 /* CDYelpEnums.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CDYelpEnums.swift; path = Source/CDYelpEnums.swift; sourceTree = "<group>"; };
+		6D8E065BC4D8E9ACD8FAD881171B766D /* FromJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FromJSON.swift; path = Sources/FromJSON.swift; sourceTree = "<group>"; };
+		6DE4E7305A3E6BF2E8DBCB5A35F06537 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
+		6E7C2F98AA96538E7F94914F82F0F5F8 /* Pods-Food Truck FinderTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Food Truck FinderTests-umbrella.h"; sourceTree = "<group>"; };
+		703F06E8DC6499DA5542E9112F33A26D /* Pods-Food Truck Finder.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Food Truck Finder.modulemap"; sourceTree = "<group>"; };
+		719409B3B0A00C845AD7D2489751DA70 /* ISO8601DateTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ISO8601DateTransform.swift; path = Sources/ISO8601DateTransform.swift; sourceTree = "<group>"; };
+		7416989CE57742E9D70854828E417B5D /* CDYelpConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CDYelpConstants.swift; path = Source/CDYelpConstants.swift; sourceTree = "<group>"; };
+		75DCD95327DF5F3FAC2FA046B7C9B324 /* Pods-Food Truck Finder-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Food Truck Finder-Info.plist"; sourceTree = "<group>"; };
+		7898CB575EE3597349D8B8005CD8E18F /* ImmutableMappable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImmutableMappable.swift; path = Sources/ImmutableMappable.swift; sourceTree = "<group>"; };
+		7E121A60F228E47817C99D67F4F34436 /* CDYelpAutoCompleteResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CDYelpAutoCompleteResponse.swift; path = Source/CDYelpAutoCompleteResponse.swift; sourceTree = "<group>"; };
+		7E923EB352F3CDF5934CDA6AB42D7270 /* MapError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MapError.swift; path = Sources/MapError.swift; sourceTree = "<group>"; };
+		7EA2F9609B154DCEF56759F80B4E3774 /* CodableTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CodableTransform.swift; path = Sources/CodableTransform.swift; sourceTree = "<group>"; };
+		808C4E5F0E2C0355633C640809D6B2D6 /* ObjectMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ObjectMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		80C2D14D299B309E5CC933F6BD82B1F9 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		82269EED4D8AA1B32CF1A51A08C189D2 /* CDYelpFusionKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CDYelpFusionKit.framework; path = CDYelpFusionKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8416FB57E15C10AE5EF15B0E96E3B6CB /* Pods_Food_Truck_FinderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Food_Truck_FinderTests.framework; path = "Pods-Food Truck FinderTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		856D9162668E3F25BEA7DC0EF0065AF1 /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
+		85D7BA44CC2F5B996089997B6AF5BA29 /* ObjectMapper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ObjectMapper.modulemap; sourceTree = "<group>"; };
+		862E64296E66A6CFC9A0E61E9073A26B /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		865ABF1C4E8EC4E5BFE2AB1B4CD51552 /* Pods-Food Truck FinderUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Food Truck FinderUITests-umbrella.h"; sourceTree = "<group>"; };
+		86822384CD379FCE373C2F755839B8DE /* AlamofireObjectMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AlamofireObjectMapper.framework; path = AlamofireObjectMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		87314150D910B63FFC09BA23BDC34B7D /* CDYelpReview.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CDYelpReview.swift; path = Source/CDYelpReview.swift; sourceTree = "<group>"; };
+		894D3DCD29C8937501CEA91C041070C5 /* Pods-Food Truck FinderUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Food Truck FinderUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		89915FEA83C6A8018FA4369B6AF1CC44 /* ObjectMapper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ObjectMapper-dummy.m"; sourceTree = "<group>"; };
+		8DA7E972E3A9247DB93C7CA09D2954EF /* CDYelpLocation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CDYelpLocation.swift; path = Source/CDYelpLocation.swift; sourceTree = "<group>"; };
+		974E57A38402F2C47E34A890F488C426 /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = Sources/Operators.swift; sourceTree = "<group>"; };
+		9814EC830B580EA536BF861C3AEFC721 /* EnumOperators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EnumOperators.swift; path = Sources/EnumOperators.swift; sourceTree = "<group>"; };
+		998800D853DF752E02758F42D8E0065A /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		9ABD0307682752EC5264C3DA2F1DB5AA /* AlamofireObjectMapper-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AlamofireObjectMapper-Info.plist"; sourceTree = "<group>"; };
+		9C904110ACC588EE24CF30C530D8CB80 /* CDYelpFusionKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CDYelpFusionKit-umbrella.h"; sourceTree = "<group>"; };
+		9D6AEA1956CBCC939EB9A89F1B2B7A5F /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A39E866C3B1D04723217A8B7FD47863F /* Pods-Food Truck FinderUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Food Truck FinderUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		A656D3B4E7D03EEBC80AD9895E761B57 /* Pods-Food Truck FinderTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Food Truck FinderTests.modulemap"; sourceTree = "<group>"; };
-		A750247BD5F3B6E2E447E3E209364090 /* YLPReview.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YLPReview.m; path = Classes/Response/YLPReview.m; sourceTree = "<group>"; };
-		A9AA5CF2174CD5B3D312BDEE4C5ED3B1 /* YelpAPI-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YelpAPI-umbrella.h"; sourceTree = "<group>"; };
-		AB234DCDF843D7E5017B75475348EF59 /* YLPClient+Search.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "YLPClient+Search.h"; path = "Classes/Client/YLPClient+Search.h"; sourceTree = "<group>"; };
-		AEB91EA65D868D4774CCEA60AD18AC5A /* Pods-Food Truck FinderUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Food Truck FinderUITests-umbrella.h"; sourceTree = "<group>"; };
-		B15C186360218EEA36A7455F888C25C3 /* YLPUser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YLPUser.m; path = Classes/Response/YLPUser.m; sourceTree = "<group>"; };
-		B4792AFD83A166CE9FF480B1280D7A96 /* YLPQuery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YLPQuery.h; path = Classes/Request/YLPQuery.h; sourceTree = "<group>"; };
-		B79887F0BC905A6D1B79ED12FA54B231 /* Pods-Food Truck Finder-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Food Truck Finder-dummy.m"; sourceTree = "<group>"; };
-		BB302BF65FD8BAB27E0A39667BA36DBA /* Pods-Food Truck FinderTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Food Truck FinderTests-dummy.m"; sourceTree = "<group>"; };
-		BB462562BAAD53AE5B24CD30EFC334C3 /* NSDictionary+YLPUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+YLPUtils.m"; path = "Classes/Response/NSDictionary+YLPUtils.m"; sourceTree = "<group>"; };
-		BD5C5BC44F45F1F2CA6528AD0FE14053 /* Pods-Food Truck Finder-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Food Truck Finder-umbrella.h"; sourceTree = "<group>"; };
-		C0C31B1B8730B0F8E0DF9B9C699FEF7F /* Pods-Food Truck FinderTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Food Truck FinderTests-umbrella.h"; sourceTree = "<group>"; };
-		C58487AE50934F5D3C125E4AD2B23B31 /* Pods-Food Truck FinderUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Food Truck FinderUITests-Info.plist"; sourceTree = "<group>"; };
-		C77ECA3F8BC83D4EB912743D3BA91C61 /* YLPClient+Search.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "YLPClient+Search.m"; path = "Classes/Client/YLPClient+Search.m"; sourceTree = "<group>"; };
-		C8BC3CBFA4986619BED7529EFF447B63 /* Pods-Food Truck Finder.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Food Truck Finder.modulemap"; sourceTree = "<group>"; };
-		CAFCA0637BB9689BD4E56694A921E0E7 /* YLPCategory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YLPCategory.m; path = Classes/Response/YLPCategory.m; sourceTree = "<group>"; };
-		CD8BC6D44BBF9A7AD9BDD82DBDF8BF29 /* YelpAPI.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YelpAPI.xcconfig; sourceTree = "<group>"; };
-		D1C106CC8663123E971919E87E5A9085 /* YLPClient+PhoneSearch.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "YLPClient+PhoneSearch.m"; path = "Classes/Client/YLPClient+PhoneSearch.m"; sourceTree = "<group>"; };
-		D62C71A186B19AF56941BD977283C633 /* YLPSortType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YLPSortType.h; path = Classes/Request/YLPSortType.h; sourceTree = "<group>"; };
-		D70DA80009B00F5A1532D8CFA773E62C /* YLPLocation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YLPLocation.h; path = Classes/Response/YLPLocation.h; sourceTree = "<group>"; };
-		DB79C08A4E84ABAF1077239C217A0577 /* Pods-Food Truck Finder-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Food Truck Finder-acknowledgements.markdown"; sourceTree = "<group>"; };
-		E41A4A88A230C8C16C3AF9F65176F8E0 /* YLPLocation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YLPLocation.m; path = Classes/Response/YLPLocation.m; sourceTree = "<group>"; };
-		E4B086B64664F03278B04B4AA73B0694 /* YLPBusinessReviews.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YLPBusinessReviews.m; path = Classes/Response/YLPBusinessReviews.m; sourceTree = "<group>"; };
-		E97BE306255EF9D9892F1D0768AAA899 /* YelpAPI-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "YelpAPI-Info.plist"; sourceTree = "<group>"; };
-		EB0C9D6C8915E3B66EEC256231610432 /* Pods-Food Truck FinderUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Food Truck FinderUITests-dummy.m"; sourceTree = "<group>"; };
-		EF8F82D3AEAE2F7E0949C174F43451EF /* YLPClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YLPClient.h; path = Classes/Client/YLPClient.h; sourceTree = "<group>"; };
-		F29AF2E0B12DADBEB21DD7FC3B12D97C /* YelpAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = YelpAPI.framework; path = YelpAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F59794310A840F364C8A410FA4089C42 /* Pods-Food Truck FinderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Food Truck FinderTests.release.xcconfig"; sourceTree = "<group>"; };
-		F678E93E295FBCBC0AF8382F7243C459 /* YLPReview.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YLPReview.h; path = Classes/Response/YLPReview.h; sourceTree = "<group>"; };
-		F8397DC6CD0B0B31971D500A173177EF /* YLPUser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YLPUser.h; path = Classes/Response/YLPUser.h; sourceTree = "<group>"; };
-		F8634169C7F58E4AF33A32DAB3ADC5EE /* YLPClientPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YLPClientPrivate.h; path = Classes/Client/YLPClientPrivate.h; sourceTree = "<group>"; };
-		FDD8141F2C21984B23441FD78E539A26 /* YLPSearch.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YLPSearch.m; path = Classes/Response/YLPSearch.m; sourceTree = "<group>"; };
-		FEE229D00ADBE4A193E0132B93C3500E /* Pods-Food Truck FinderUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Food Truck FinderUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9F95CB46CBE66E4D4F04999C98A583CF /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
+		A2FE557F063E1F35830D43E6071DAEE1 /* Pods-Food Truck FinderUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Food Truck FinderUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		AA249A2F6265ECF0915CA0175F58AB7A /* EnumTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EnumTransform.swift; path = Sources/EnumTransform.swift; sourceTree = "<group>"; };
+		AC28194196EE5A91265AD121DA3BB98F /* Pods-Food Truck Finder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Food Truck Finder.debug.xcconfig"; sourceTree = "<group>"; };
+		AC346E0BEEF09EC3AB9C963F04463223 /* CDYelpRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CDYelpRouter.swift; path = Source/CDYelpRouter.swift; sourceTree = "<group>"; };
+		AC726EAD6B3927D169EF9270965475BC /* Pods-Food Truck Finder-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Food Truck Finder-dummy.m"; sourceTree = "<group>"; };
+		AE81F2B074A80A10942BD0258D2BA49A /* AlamofireObjectMapper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AlamofireObjectMapper.modulemap; sourceTree = "<group>"; };
+		B4C7D216AD14895D5DCDA689693D96D4 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
+		B854C0AB236A1BED57405B085956F22D /* CDYelpFusionKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CDYelpFusionKit.modulemap; sourceTree = "<group>"; };
+		B9084FE779702931E8DF1D00A2D725FB /* ObjectMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ObjectMapper.framework; path = ObjectMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA4C3E81BD9E5B80C1637D88B6AD1D40 /* ObjectMapper.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ObjectMapper.xcconfig; sourceTree = "<group>"; };
+		BA625CD636424F6A284C99F837E12D08 /* Pods-Food Truck Finder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Food Truck Finder.release.xcconfig"; sourceTree = "<group>"; };
+		BA9C9C2C1EF83B5F5DE2DD62171565D7 /* Pods-Food Truck Finder-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Food Truck Finder-acknowledgements.plist"; sourceTree = "<group>"; };
+		C07BF780BC77DB8FD9D34BDF1B1CB204 /* CDYelpCoordinates.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CDYelpCoordinates.swift; path = Source/CDYelpCoordinates.swift; sourceTree = "<group>"; };
+		C3350093A593B2873469423453DA8A74 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		C342A2C49FCE644DAD6FCEFAE759B2AA /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
+		C4BAE453CA44A1752C7210C0E73ED0F0 /* Pods-Food Truck FinderUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Food Truck FinderUITests-dummy.m"; sourceTree = "<group>"; };
+		C4BB835EF832D047EACCA3A90542695D /* CDYelpAPIClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CDYelpAPIClient.swift; path = Source/CDYelpAPIClient.swift; sourceTree = "<group>"; };
+		C5E7F3FB8E7FD046CBC2E1F4B1BD5BDD /* CDYelpOpen.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CDYelpOpen.swift; path = Source/CDYelpOpen.swift; sourceTree = "<group>"; };
+		C612182D6C7E2B1E5DBABA5E26952D1C /* Pods-Food Truck FinderTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Food Truck FinderTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C63827E5B85562D4901ACBA72A9C9887 /* Parameters+CDYelpFusionKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Parameters+CDYelpFusionKit.swift"; path = "Source/Parameters+CDYelpFusionKit.swift"; sourceTree = "<group>"; };
+		C6610219FC91FEE1CD7BC1CD8AE88B49 /* Pods-Food Truck Finder-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Food Truck Finder-frameworks.sh"; sourceTree = "<group>"; };
+		C694BA1AA275A74D0CE343EF37EF0CF2 /* CDColor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CDColor.swift; path = Source/CDColor.swift; sourceTree = "<group>"; };
+		CA0166B70953D629CA02E6928343DC96 /* CDImage+CDYelpFusionKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CDImage+CDYelpFusionKit.swift"; path = "Source/CDImage+CDYelpFusionKit.swift"; sourceTree = "<group>"; };
+		CADA65801B9323E187B3316B476B6038 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		CC0904EC1F137B131662A07BE6B48652 /* Mapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Mapper.swift; path = Sources/Mapper.swift; sourceTree = "<group>"; };
+		CE9A0017F822F2068476BB8AFCBF77BF /* String+CDYelpFusionKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+CDYelpFusionKit.swift"; path = "Source/String+CDYelpFusionKit.swift"; sourceTree = "<group>"; };
+		CEB8B0E2511B72B6A8957695CDD80339 /* CDImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CDImage.swift; path = Source/CDImage.swift; sourceTree = "<group>"; };
+		D00800AEB8C55EE2A7C85749B6394854 /* Pods-Food Truck Finder-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Food Truck Finder-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D0724455318DEDF845E339490A878C32 /* Pods-Food Truck FinderUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Food Truck FinderUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D17547449660F8F3CA16A49FB79B4E17 /* CDYelpSearchResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CDYelpSearchResponse.swift; path = Source/CDYelpSearchResponse.swift; sourceTree = "<group>"; };
+		D401896F9FDBD579D311C01C30860229 /* ObjectMapper-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ObjectMapper-Info.plist"; sourceTree = "<group>"; };
+		D7D9F32B558141C56AE3335188BB99B3 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
+		D8788D96683BA996B123C9CF880B3487 /* ToJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToJSON.swift; path = Sources/ToJSON.swift; sourceTree = "<group>"; };
+		DA72FF5BE5FEBB8446AC47B219D9A097 /* DataTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataTransform.swift; path = Sources/DataTransform.swift; sourceTree = "<group>"; };
+		DB4B206B94EB4A4B2191A46D8F7545E4 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
+		E0458B5EC20AC0D230E40059BA419DA2 /* CDYelpRegion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CDYelpRegion.swift; path = Source/CDYelpRegion.swift; sourceTree = "<group>"; };
+		E09E341ACB852643F054CAF8690AFAC4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		E4015FA0E70877B26A00A879F776AF84 /* CDColor+CDYelpFusionKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CDColor+CDYelpFusionKit.swift"; path = "Source/CDColor+CDYelpFusionKit.swift"; sourceTree = "<group>"; };
+		E4A024FEA4E67B689E352A73AD8187E8 /* Pods-Food Truck FinderUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Food Truck FinderUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E7310235C30F48F6CBA52FA2D2F664F1 /* CDYelpHour.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CDYelpHour.swift; path = Source/CDYelpHour.swift; sourceTree = "<group>"; };
+		E8696AA769CFB72CB5FFCF6F891C4334 /* Pods-Food Truck FinderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Food Truck FinderTests.release.xcconfig"; sourceTree = "<group>"; };
+		E8C65F20D8A7E59F9CD79802E17D3A5C /* Pods-Food Truck FinderTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Food Truck FinderTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		E9E373104DE2C169BEFE9CC8A94CC93B /* CDYelpFusionKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CDYelpFusionKit-Info.plist"; sourceTree = "<group>"; };
+		EAA95E5253D1960A94BE29ADFEC9430B /* TransformOperators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransformOperators.swift; path = Sources/TransformOperators.swift; sourceTree = "<group>"; };
+		EABB2384BC6A5F13974DA150CC8C839F /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
+		EEA897E248DDD29940DFF3AD439968DF /* CDYelpTerm.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CDYelpTerm.swift; path = Source/CDYelpTerm.swift; sourceTree = "<group>"; };
+		EF24FCB47C4832526AC76EA967275F09 /* AlamofireObjectMapper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AlamofireObjectMapper-prefix.pch"; sourceTree = "<group>"; };
+		F0D1CDC075B82B4287C35887176D6031 /* CDYelpEventsResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CDYelpEventsResponse.swift; path = Source/CDYelpEventsResponse.swift; sourceTree = "<group>"; };
+		F35623D398626F9B1B15D80472895926 /* CDYelpEvent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CDYelpEvent.swift; path = Source/CDYelpEvent.swift; sourceTree = "<group>"; };
+		FAFC6430B740945A1F8111C77C4987CD /* HexColorTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HexColorTransform.swift; path = Sources/HexColorTransform.swift; sourceTree = "<group>"; };
+		FBF5260B430F2FCCAFF11ADE76FA7EF0 /* DateTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateTransform.swift; path = Sources/DateTransform.swift; sourceTree = "<group>"; };
+		FD4069618F8E52961B94F8EF736EDD5E /* AlamofireObjectMapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlamofireObjectMapper.swift; path = AlamofireObjectMapper/AlamofireObjectMapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		6C037C7D5F9165B314CE21F96DF7CE6F /* Frameworks */ = {
+		090C1D63463ACF622287EFF9D5C9392D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01AB0BC96162DA54BCE61092BDA9852B /* Foundation.framework in Frameworks */,
+				7664FD4F59A0C00866CBAE60B0A3AD64 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C41FDE1DF1ADB1FDA17186C72CC4B9EF /* Frameworks */ = {
+		189731A4590DC0F816DF6A362A6F8AB4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				060CC312B09DD1421353B8BBC2083ED4 /* Foundation.framework in Frameworks */,
+				ED21E2ED18F14021FD468CEED75B7852 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DBF450036594B63F39BFE5F03F464A8B /* Frameworks */ = {
+		1E2123CDB8A86CC48ABF5EFA0BB57D8D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				957911FD8CFD46F8AC6F1D4FF0FDCAFB /* Foundation.framework in Frameworks */,
+				FDBB7F97BED9A16CB2EA680DD58BF86B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E3A12C1B830802F21DD07F09EEE8CDC2 /* Frameworks */ = {
+		369A1040F88871DA39974D1375DBA8D8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58836C5360C21072C8EB28D53B98EFE8 /* Foundation.framework in Frameworks */,
+				2FCE485888577CE5E69636C3FEA27229 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB533FA6985A920EFC83C26481CD6E6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4762756F64C661592645D32D87ECA8C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E21691CFA3785FEE68D8E853495CC22D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F2BAD1D167F82484E3D010E0263AFC8 /* AlamofireObjectMapper.framework in Frameworks */,
+				EFCFEA352CAFDBC727796700FBCE7A99 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E70E68E2257E70ABF0DD978DF8DF1523 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43D2607D4FC1D4991DB364E719510F1D /* Alamofire.framework in Frameworks */,
+				1251ABF8613A45A93CF7198E944EFA1D /* Foundation.framework in Frameworks */,
+				F3C822A5B0B643213C171930EF0FD33C /* ObjectMapper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		330C7D6CC514C70C784BC72E29FDE76D /* Pods */ = {
+		07A7907C508DA1AF1F63F0D3E37B39F3 /* CDYelpFusionKit */ = {
 			isa = PBXGroup;
 			children = (
-				C480298D5FC106ABB7C6E15B60D60BB1 /* YelpAPI */,
+				C694BA1AA275A74D0CE343EF37EF0CF2 /* CDColor.swift */,
+				E4015FA0E70877B26A00A879F776AF84 /* CDColor+CDYelpFusionKit.swift */,
+				CEB8B0E2511B72B6A8957695CDD80339 /* CDImage.swift */,
+				CA0166B70953D629CA02E6928343DC96 /* CDImage+CDYelpFusionKit.swift */,
+				C4BB835EF832D047EACCA3A90542695D /* CDYelpAPIClient.swift */,
+				7E121A60F228E47817C99D67F4F34436 /* CDYelpAutoCompleteResponse.swift */,
+				53026AFEC3967DD35D78AB251DD76850 /* CDYelpBusiness.swift */,
+				13E0BF1B082A4DC89C8066DFB1176456 /* CDYelpBusinessResponse.swift */,
+				666EA01DAA420B06063876FFB203383C /* CDYelpCategory.swift */,
+				11C82EC2D4FD1A9FE2B3C0F1B075C9FE /* CDYelpCenter.swift */,
+				7416989CE57742E9D70854828E417B5D /* CDYelpConstants.swift */,
+				C07BF780BC77DB8FD9D34BDF1B1CB204 /* CDYelpCoordinates.swift */,
+				6D5A61E069A77716B8AE134A8BC99161 /* CDYelpEnums.swift */,
+				51DDA86692D1FE48CC97188B8E671C28 /* CDYelpError.swift */,
+				F35623D398626F9B1B15D80472895926 /* CDYelpEvent.swift */,
+				F0D1CDC075B82B4287C35887176D6031 /* CDYelpEventsResponse.swift */,
+				E7310235C30F48F6CBA52FA2D2F664F1 /* CDYelpHour.swift */,
+				8DA7E972E3A9247DB93C7CA09D2954EF /* CDYelpLocation.swift */,
+				C5E7F3FB8E7FD046CBC2E1F4B1BD5BDD /* CDYelpOpen.swift */,
+				E0458B5EC20AC0D230E40059BA419DA2 /* CDYelpRegion.swift */,
+				87314150D910B63FFC09BA23BDC34B7D /* CDYelpReview.swift */,
+				6641DC64CE398B0105F293E177F24353 /* CDYelpReviewsResponse.swift */,
+				AC346E0BEEF09EC3AB9C963F04463223 /* CDYelpRouter.swift */,
+				D17547449660F8F3CA16A49FB79B4E17 /* CDYelpSearchResponse.swift */,
+				EEA897E248DDD29940DFF3AD439968DF /* CDYelpTerm.swift */,
+				4879220D2CA5F1CC348F6723D05105B0 /* CDYelpUser.swift */,
+				C63827E5B85562D4901ACBA72A9C9887 /* Parameters+CDYelpFusionKit.swift */,
+				CE9A0017F822F2068476BB8AFCBF77BF /* String+CDYelpFusionKit.swift */,
+				1E106311CA8A7CC73F57684DEA8364F2 /* URL+CDYelpFusionKit.swift */,
+				5F74AF9445BC1D600DCB34606F2ACBA4 /* Resources */,
+				6687C9036A8F409F36F4E2F969F13348 /* Support Files */,
 			);
-			name = Pods;
+			name = CDYelpFusionKit;
+			path = CDYelpFusionKit;
 			sourceTree = "<group>";
 		};
-		AD0928413B21B125368E56EAE350C81A /* Pods-Food Truck Finder */ = {
+		35F4062621E202DB3C2B7E298E4373F0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C8BC3CBFA4986619BED7529EFF447B63 /* Pods-Food Truck Finder.modulemap */,
-				DB79C08A4E84ABAF1077239C217A0577 /* Pods-Food Truck Finder-acknowledgements.markdown */,
-				81C8B535D0D5C571D05869B9BE3D45DE /* Pods-Food Truck Finder-acknowledgements.plist */,
-				B79887F0BC905A6D1B79ED12FA54B231 /* Pods-Food Truck Finder-dummy.m */,
-				3E50ADCCDCA0E4F834C2C4C3FBB57FD8 /* Pods-Food Truck Finder-frameworks.sh */,
-				1B4B8B9B336DBB278D41F4FE609662F3 /* Pods-Food Truck Finder-Info.plist */,
-				BD5C5BC44F45F1F2CA6528AD0FE14053 /* Pods-Food Truck Finder-umbrella.h */,
-				0B5FC5E014F576CADD75503431A8D90C /* Pods-Food Truck Finder.debug.xcconfig */,
-				3DEFF5119254D7F16EF0ADE734D9BA29 /* Pods-Food Truck Finder.release.xcconfig */,
+				5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */,
+				86822384CD379FCE373C2F755839B8DE /* AlamofireObjectMapper.framework */,
+				82269EED4D8AA1B32CF1A51A08C189D2 /* CDYelpFusionKit.framework */,
+				B9084FE779702931E8DF1D00A2D725FB /* ObjectMapper.framework */,
+				1ABCCE42FFC2F60091AC7E2153F10BE9 /* Pods_Food_Truck_Finder.framework */,
+				8416FB57E15C10AE5EF15B0E96E3B6CB /* Pods_Food_Truck_FinderTests.framework */,
+				2BA025190445A2566F0888B763A1B6AB /* Pods_Food_Truck_FinderUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		46B80F8C2388752274B9381AFA285256 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				640B3087AFEA06B3B45A2D2713F09B35 /* Alamofire.modulemap */,
+				9D6AEA1956CBCC939EB9A89F1B2B7A5F /* Alamofire.xcconfig */,
+				D7D9F32B558141C56AE3335188BB99B3 /* Alamofire-dummy.m */,
+				6AFEF4630F66B4265A0263AA6B062127 /* Alamofire-Info.plist */,
+				1BC11326B1484B8B70E86B284FA43DE0 /* Alamofire-prefix.pch */,
+				CADA65801B9323E187B3316B476B6038 /* Alamofire-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Alamofire";
+			sourceTree = "<group>";
+		};
+		52E63A22D1160ADD154124B6612997EA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AE81F2B074A80A10942BD0258D2BA49A /* AlamofireObjectMapper.modulemap */,
+				53BA0BA9AC1898CAA326AEA727D324CC /* AlamofireObjectMapper.xcconfig */,
+				19D0ABD05C4C35CF13DF403A470EC93A /* AlamofireObjectMapper-dummy.m */,
+				9ABD0307682752EC5264C3DA2F1DB5AA /* AlamofireObjectMapper-Info.plist */,
+				EF24FCB47C4832526AC76EA967275F09 /* AlamofireObjectMapper-prefix.pch */,
+				0A5219F1957F392EFAA3CC513354B207 /* AlamofireObjectMapper-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AlamofireObjectMapper";
+			sourceTree = "<group>";
+		};
+		5F74AF9445BC1D600DCB34606F2ACBA4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5B7C1327AA655F42DF01068600FF0104 /* Images.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		6687C9036A8F409F36F4E2F969F13348 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B854C0AB236A1BED57405B085956F22D /* CDYelpFusionKit.modulemap */,
+				4B0915D6B00924A47676AB182CCEECFA /* CDYelpFusionKit.xcconfig */,
+				197E170A32982C80771ECA227AC2B9FB /* CDYelpFusionKit-dummy.m */,
+				E9E373104DE2C169BEFE9CC8A94CC93B /* CDYelpFusionKit-Info.plist */,
+				1B446FB0FF6B38899F166573DD18E32F /* CDYelpFusionKit-prefix.pch */,
+				9C904110ACC588EE24CF30C530D8CB80 /* CDYelpFusionKit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CDYelpFusionKit";
+			sourceTree = "<group>";
+		};
+		86E5FA81B90EA0D9C9B412A62CF9FCB4 /* AlamofireObjectMapper */ = {
+			isa = PBXGroup;
+			children = (
+				FD4069618F8E52961B94F8EF736EDD5E /* AlamofireObjectMapper.swift */,
+				52E63A22D1160ADD154124B6612997EA /* Support Files */,
+			);
+			name = AlamofireObjectMapper;
+			path = AlamofireObjectMapper;
+			sourceTree = "<group>";
+		};
+		A5381C012291A4BDF9DEAED2E1A07C5E /* Pods-Food Truck Finder */ = {
+			isa = PBXGroup;
+			children = (
+				703F06E8DC6499DA5542E9112F33A26D /* Pods-Food Truck Finder.modulemap */,
+				D00800AEB8C55EE2A7C85749B6394854 /* Pods-Food Truck Finder-acknowledgements.markdown */,
+				BA9C9C2C1EF83B5F5DE2DD62171565D7 /* Pods-Food Truck Finder-acknowledgements.plist */,
+				AC726EAD6B3927D169EF9270965475BC /* Pods-Food Truck Finder-dummy.m */,
+				C6610219FC91FEE1CD7BC1CD8AE88B49 /* Pods-Food Truck Finder-frameworks.sh */,
+				75DCD95327DF5F3FAC2FA046B7C9B324 /* Pods-Food Truck Finder-Info.plist */,
+				66C9A84B655CF5BB92149BA021385ACA /* Pods-Food Truck Finder-umbrella.h */,
+				AC28194196EE5A91265AD121DA3BB98F /* Pods-Food Truck Finder.debug.xcconfig */,
+				BA625CD636424F6A284C99F837E12D08 /* Pods-Food Truck Finder.release.xcconfig */,
 			);
 			name = "Pods-Food Truck Finder";
 			path = "Target Support Files/Pods-Food Truck Finder";
 			sourceTree = "<group>";
 		};
+		A58D903006CA86736D31644FE41050A0 /* Pods-Food Truck FinderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				48A721C9AD4EC648CE20A53273E8D99F /* Pods-Food Truck FinderUITests.modulemap */,
+				894D3DCD29C8937501CEA91C041070C5 /* Pods-Food Truck FinderUITests-acknowledgements.markdown */,
+				A2FE557F063E1F35830D43E6071DAEE1 /* Pods-Food Truck FinderUITests-acknowledgements.plist */,
+				C4BAE453CA44A1752C7210C0E73ED0F0 /* Pods-Food Truck FinderUITests-dummy.m */,
+				3353BBEB0C52ECC612D86E75BB6791D7 /* Pods-Food Truck FinderUITests-Info.plist */,
+				865ABF1C4E8EC4E5BFE2AB1B4CD51552 /* Pods-Food Truck FinderUITests-umbrella.h */,
+				D0724455318DEDF845E339490A878C32 /* Pods-Food Truck FinderUITests.debug.xcconfig */,
+				E4A024FEA4E67B689E352A73AD8187E8 /* Pods-Food Truck FinderUITests.release.xcconfig */,
+			);
+			name = "Pods-Food Truck FinderUITests";
+			path = "Target Support Files/Pods-Food Truck FinderUITests";
+			sourceTree = "<group>";
+		};
 		B01EB4ECEDF91AA6340B8A3E2C1AF7C5 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				AD0928413B21B125368E56EAE350C81A /* Pods-Food Truck Finder */,
-				D36C1DA5D7A7CCCE91498CF78F59479A /* Pods-Food Truck FinderTests */,
-				F7703F2FAC0A6B0FA0A7B973F391660C /* Pods-Food Truck FinderUITests */,
+				A5381C012291A4BDF9DEAED2E1A07C5E /* Pods-Food Truck Finder */,
+				E7299EBFA0BA757B5D6DD152D4120089 /* Pods-Food Truck FinderTests */,
+				A58D903006CA86736D31644FE41050A0 /* Pods-Food Truck FinderUITests */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+		BBF96A4A485BF02727A0982DA50AA831 /* Alamofire */ = {
 			isa = PBXGroup;
 			children = (
-				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+				DB4B206B94EB4A4B2191A46D8F7545E4 /* AFError.swift */,
+				07FA44BEFC3D55154A47A59BB176647A /* Alamofire.swift */,
+				C3350093A593B2873469423453DA8A74 /* DispatchQueue+Alamofire.swift */,
+				9F95CB46CBE66E4D4F04999C98A583CF /* MultipartFormData.swift */,
+				80C2D14D299B309E5CC933F6BD82B1F9 /* NetworkReachabilityManager.swift */,
+				034ADA60E45F8CE3AE86F630987F47DE /* Notifications.swift */,
+				998800D853DF752E02758F42D8E0065A /* ParameterEncoding.swift */,
+				6DE4E7305A3E6BF2E8DBCB5A35F06537 /* Request.swift */,
+				EABB2384BC6A5F13974DA150CC8C839F /* Response.swift */,
+				4338A5C7AD48C9A9B76D48A25248471A /* ResponseSerialization.swift */,
+				35821DB0482137FE17306F561062DBD6 /* Result.swift */,
+				B4C7D216AD14895D5DCDA689693D96D4 /* ServerTrustPolicy.swift */,
+				338DC5623558E58F135D1F00DB397600 /* SessionDelegate.swift */,
+				26CDBF0E126A7C81775BE131F12D2AD9 /* SessionManager.swift */,
+				C342A2C49FCE644DAD6FCEFAE759B2AA /* TaskDelegate.swift */,
+				856D9162668E3F25BEA7DC0EF0065AF1 /* Timeline.swift */,
+				862E64296E66A6CFC9A0E61E9073A26B /* Validation.swift */,
+				46B80F8C2388752274B9381AFA285256 /* Support Files */,
+			);
+			name = Alamofire;
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		BEA1CDD1FC9C0DF76157ECB6CFB89326 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				E09E341ACB852643F054CAF8690AFAC4 /* Foundation.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		C480298D5FC106ABB7C6E15B60D60BB1 /* YelpAPI */ = {
+		BF476D6C2DDD21B0954FA5107EE5A77C /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				BB462562BAAD53AE5B24CD30EFC334C3 /* NSDictionary+YLPUtils.m */,
-				02C1534DA76A5DE6FF25052D94926D46 /* YelpAPI.h */,
-				461A07DF1D915B70E1DF4BD34A1F4726 /* YLPBusiness.h */,
-				0527DC8B2E946A15DB5F0A2202136F93 /* YLPBusiness.m */,
-				89F315D480F75D72EEEDC31AED1C32D0 /* YLPBusinessReviews.h */,
-				E4B086B64664F03278B04B4AA73B0694 /* YLPBusinessReviews.m */,
-				2181CDFCF5EAFF1F1A8222AFC7D70576 /* YLPCategory.h */,
-				CAFCA0637BB9689BD4E56694A921E0E7 /* YLPCategory.m */,
-				EF8F82D3AEAE2F7E0949C174F43451EF /* YLPClient.h */,
-				66DBFBCACA5432725BB28A87385E846B /* YLPClient.m */,
-				96518F95B02B1EB0AD699D0E6B814B10 /* YLPClient+Business.h */,
-				6F7D3F68FA8153D2F4905DE72D67D97B /* YLPClient+Business.m */,
-				2EA8494BB8F031D55C2BDA03D0DD0C75 /* YLPClient+PhoneSearch.h */,
-				D1C106CC8663123E971919E87E5A9085 /* YLPClient+PhoneSearch.m */,
-				93952B6B202AE9C489C8B3B2FE030916 /* YLPClient+Reviews.h */,
-				54088D1A4B8D6370E13BA3AD3A01F1BC /* YLPClient+Reviews.m */,
-				AB234DCDF843D7E5017B75475348EF59 /* YLPClient+Search.h */,
-				C77ECA3F8BC83D4EB912743D3BA91C61 /* YLPClient+Search.m */,
-				F8634169C7F58E4AF33A32DAB3ADC5EE /* YLPClientPrivate.h */,
-				9D3E14924656CC71F88D8701B4B552C6 /* YLPCoordinate.h */,
-				848F1DEE47D05C1CE7F0E0C5837FF622 /* YLPCoordinate.m */,
-				D70DA80009B00F5A1532D8CFA773E62C /* YLPLocation.h */,
-				E41A4A88A230C8C16C3AF9F65176F8E0 /* YLPLocation.m */,
-				B4792AFD83A166CE9FF480B1280D7A96 /* YLPQuery.h */,
-				0AAEFA45A709411A8DCFDF4EE665CC7B /* YLPQuery.m */,
-				926D51D0586BEB94CC366875E9C96720 /* YLPQueryPrivate.h */,
-				2E87702ED551066F96E67AD7687D9B08 /* YLPResponsePrivate.h */,
-				F678E93E295FBCBC0AF8382F7243C459 /* YLPReview.h */,
-				A750247BD5F3B6E2E447E3E209364090 /* YLPReview.m */,
-				470529250AE5710C00F103FDDF1C7E4C /* YLPSearch.h */,
-				FDD8141F2C21984B23441FD78E539A26 /* YLPSearch.m */,
-				D62C71A186B19AF56941BD977283C633 /* YLPSortType.h */,
-				F8397DC6CD0B0B31971D500A173177EF /* YLPUser.h */,
-				B15C186360218EEA36A7455F888C25C3 /* YLPUser.m */,
-				DA02E4024A1CF73A1E7A6AA0CCD5ACC2 /* Support Files */,
+				85D7BA44CC2F5B996089997B6AF5BA29 /* ObjectMapper.modulemap */,
+				BA4C3E81BD9E5B80C1637D88B6AD1D40 /* ObjectMapper.xcconfig */,
+				89915FEA83C6A8018FA4369B6AF1CC44 /* ObjectMapper-dummy.m */,
+				D401896F9FDBD579D311C01C30860229 /* ObjectMapper-Info.plist */,
+				62DE9FD837C629B44CA95230FEB763E6 /* ObjectMapper-prefix.pch */,
+				0356362B95C5E028155F35E020A2851B /* ObjectMapper-umbrella.h */,
 			);
-			name = YelpAPI;
-			path = YelpAPI;
+			name = "Support Files";
+			path = "../Target Support Files/ObjectMapper";
+			sourceTree = "<group>";
+		};
+		CC2493E5711B867A94FBF00C28ECE2BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				63B19DB960098182BE202226F0DA20EC /* Alamofire.framework */,
+				0CF465F510C657CACFFEABB60106FFF0 /* AlamofireObjectMapper.framework */,
+				808C4E5F0E2C0355633C640809D6B2D6 /* ObjectMapper.framework */,
+				BEA1CDD1FC9C0DF76157ECB6CFB89326 /* iOS */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				330C7D6CC514C70C784BC72E29FDE76D /* Pods */,
-				DA7D1C2BC8B21E9589D7EDE06EF472C2 /* Products */,
+				CC2493E5711B867A94FBF00C28ECE2BD /* Frameworks */,
+				F0459C83C2ABA040CDF3EFAF1AE2F689 /* Pods */,
+				35F4062621E202DB3C2B7E298E4373F0 /* Products */,
 				B01EB4ECEDF91AA6340B8A3E2C1AF7C5 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+		DBA59BACC20CE6ECEEFA4322179CAB55 /* ObjectMapper */ = {
 			isa = PBXGroup;
 			children = (
-				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+				7EA2F9609B154DCEF56759F80B4E3774 /* CodableTransform.swift */,
+				4D77CA51945FCBAA22589D3153DCC98E /* CustomDateFormatTransform.swift */,
+				DA72FF5BE5FEBB8446AC47B219D9A097 /* DataTransform.swift */,
+				596284DA34E80FC5A7C8B485A3FBA183 /* DateFormatterTransform.swift */,
+				FBF5260B430F2FCCAFF11ADE76FA7EF0 /* DateTransform.swift */,
+				209698274789F46E64829DBABC445459 /* DictionaryTransform.swift */,
+				9814EC830B580EA536BF861C3AEFC721 /* EnumOperators.swift */,
+				AA249A2F6265ECF0915CA0175F58AB7A /* EnumTransform.swift */,
+				6D8E065BC4D8E9ACD8FAD881171B766D /* FromJSON.swift */,
+				FAFC6430B740945A1F8111C77C4987CD /* HexColorTransform.swift */,
+				7898CB575EE3597349D8B8005CD8E18F /* ImmutableMappable.swift */,
+				1E0B582630E0C19F22FC1A34C70D088F /* IntegerOperators.swift */,
+				719409B3B0A00C845AD7D2489751DA70 /* ISO8601DateTransform.swift */,
+				4F20C3FDE079648E81C93F7D265547FE /* Map.swift */,
+				7E923EB352F3CDF5934CDA6AB42D7270 /* MapError.swift */,
+				48B5FE3AB23A07EE0B9C373347563F92 /* Mappable.swift */,
+				CC0904EC1F137B131662A07BE6B48652 /* Mapper.swift */,
+				5BD7588EAA4DBCBD9F5ED8FDA66E8FCE /* NSDecimalNumberTransform.swift */,
+				974E57A38402F2C47E34A890F488C426 /* Operators.swift */,
+				D8788D96683BA996B123C9CF880B3487 /* ToJSON.swift */,
+				377D05E02B11999596C9C0E2B5294437 /* TransformOf.swift */,
+				EAA95E5253D1960A94BE29ADFEC9430B /* TransformOperators.swift */,
+				5D9FD7AC5A58B28235551857A2EC5E0C /* TransformType.swift */,
+				621936FF71890C9ECFC76BEC5F2C0B7F /* URLTransform.swift */,
+				BF476D6C2DDD21B0954FA5107EE5A77C /* Support Files */,
 			);
-			name = Frameworks;
+			name = ObjectMapper;
+			path = ObjectMapper;
 			sourceTree = "<group>";
 		};
-		D36C1DA5D7A7CCCE91498CF78F59479A /* Pods-Food Truck FinderTests */ = {
+		E7299EBFA0BA757B5D6DD152D4120089 /* Pods-Food Truck FinderTests */ = {
 			isa = PBXGroup;
 			children = (
-				A656D3B4E7D03EEBC80AD9895E761B57 /* Pods-Food Truck FinderTests.modulemap */,
-				254AC259D3C8B123D7798322666BB830 /* Pods-Food Truck FinderTests-acknowledgements.markdown */,
-				7A90CE6CC27A9588E65CD423C73F0AFC /* Pods-Food Truck FinderTests-acknowledgements.plist */,
-				BB302BF65FD8BAB27E0A39667BA36DBA /* Pods-Food Truck FinderTests-dummy.m */,
-				4F0D1D67C3FE9C3181B3C1BB572F2BEC /* Pods-Food Truck FinderTests-Info.plist */,
-				C0C31B1B8730B0F8E0DF9B9C699FEF7F /* Pods-Food Truck FinderTests-umbrella.h */,
-				3735EFA445160B752D4451F98CC0BF2E /* Pods-Food Truck FinderTests.debug.xcconfig */,
-				F59794310A840F364C8A410FA4089C42 /* Pods-Food Truck FinderTests.release.xcconfig */,
+				5BD3BC7DD4C52B8E453E2DC70B592A8C /* Pods-Food Truck FinderTests.modulemap */,
+				C612182D6C7E2B1E5DBABA5E26952D1C /* Pods-Food Truck FinderTests-acknowledgements.markdown */,
+				E8C65F20D8A7E59F9CD79802E17D3A5C /* Pods-Food Truck FinderTests-acknowledgements.plist */,
+				1D50EA0E80B08917CCEAD3157F9BF38D /* Pods-Food Truck FinderTests-dummy.m */,
+				5B28A4DA3DA46D103087CBF4E4F04E6E /* Pods-Food Truck FinderTests-Info.plist */,
+				6E7C2F98AA96538E7F94914F82F0F5F8 /* Pods-Food Truck FinderTests-umbrella.h */,
+				4F24D0A4836199215E1A3D126C6F2545 /* Pods-Food Truck FinderTests.debug.xcconfig */,
+				E8696AA769CFB72CB5FFCF6F891C4334 /* Pods-Food Truck FinderTests.release.xcconfig */,
 			);
 			name = "Pods-Food Truck FinderTests";
 			path = "Target Support Files/Pods-Food Truck FinderTests";
 			sourceTree = "<group>";
 		};
-		DA02E4024A1CF73A1E7A6AA0CCD5ACC2 /* Support Files */ = {
+		F0459C83C2ABA040CDF3EFAF1AE2F689 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				89AE7C16795828782502BC5E388FAB41 /* YelpAPI.modulemap */,
-				CD8BC6D44BBF9A7AD9BDD82DBDF8BF29 /* YelpAPI.xcconfig */,
-				220D44C37B35AD3E87916343DD0DF55F /* YelpAPI-dummy.m */,
-				E97BE306255EF9D9892F1D0768AAA899 /* YelpAPI-Info.plist */,
-				5E56CF4CA9D9BBFDC0534DA89C539D14 /* YelpAPI-prefix.pch */,
-				A9AA5CF2174CD5B3D312BDEE4C5ED3B1 /* YelpAPI-umbrella.h */,
+				BBF96A4A485BF02727A0982DA50AA831 /* Alamofire */,
+				86E5FA81B90EA0D9C9B412A62CF9FCB4 /* AlamofireObjectMapper */,
+				07A7907C508DA1AF1F63F0D3E37B39F3 /* CDYelpFusionKit */,
+				DBA59BACC20CE6ECEEFA4322179CAB55 /* ObjectMapper */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/YelpAPI";
-			sourceTree = "<group>";
-		};
-		DA7D1C2BC8B21E9589D7EDE06EF472C2 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				0C72D7ED465F78CB42C71BE84C330B9E /* Pods_Food_Truck_Finder.framework */,
-				7AD03F01A83AFFC42BA5B3E5B78B2F23 /* Pods_Food_Truck_FinderTests.framework */,
-				3AF46BB1C38FA4947AD6721E2FC28AEA /* Pods_Food_Truck_FinderUITests.framework */,
-				F29AF2E0B12DADBEB21DD7FC3B12D97C /* YelpAPI.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		F7703F2FAC0A6B0FA0A7B973F391660C /* Pods-Food Truck FinderUITests */ = {
-			isa = PBXGroup;
-			children = (
-				1F13FCE5C0CF691AF780EBF3E09F6C7C /* Pods-Food Truck FinderUITests.modulemap */,
-				FEE229D00ADBE4A193E0132B93C3500E /* Pods-Food Truck FinderUITests-acknowledgements.markdown */,
-				A39E866C3B1D04723217A8B7FD47863F /* Pods-Food Truck FinderUITests-acknowledgements.plist */,
-				EB0C9D6C8915E3B66EEC256231610432 /* Pods-Food Truck FinderUITests-dummy.m */,
-				C58487AE50934F5D3C125E4AD2B23B31 /* Pods-Food Truck FinderUITests-Info.plist */,
-				AEB91EA65D868D4774CCEA60AD18AC5A /* Pods-Food Truck FinderUITests-umbrella.h */,
-				96378F2A8BCB7054EE4382BC935EBBBC /* Pods-Food Truck FinderUITests.debug.xcconfig */,
-				1A49BEBF2D6A592520C2900031385D23 /* Pods-Food Truck FinderUITests.release.xcconfig */,
-			);
-			name = "Pods-Food Truck FinderUITests";
-			path = "Target Support Files/Pods-Food Truck FinderUITests";
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		127713EF01E662A402132EBEF96CB642 /* Headers */ = {
+		0256662A86C1A6B10DCC8F5842F4BA45 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98B39E0BCDEEF6D8D3CFF909C0FF7E7E /* YelpAPI-umbrella.h in Headers */,
-				F4BFD5721525B9A274CEB39FDA65FAC3 /* YelpAPI.h in Headers */,
-				266FEB6D7AB73AF98CE658F0AC31BB87 /* YLPBusiness.h in Headers */,
-				AE25182B6120650CAFF886359AF2B23B /* YLPBusinessReviews.h in Headers */,
-				7DD04AA3D71AF06C1B12F3920BFE2C32 /* YLPCategory.h in Headers */,
-				EBA0CDBF61484FCB7F020C381E00482E /* YLPClient+Business.h in Headers */,
-				153ADC8EC709DA53314335E05C53363B /* YLPClient+PhoneSearch.h in Headers */,
-				6437A8D08E75F89A87B1946462372042 /* YLPClient+Reviews.h in Headers */,
-				CD5E39AC8960C42CA2B1EAA02CD8F895 /* YLPClient+Search.h in Headers */,
-				53BCD52EE0DB1008B0D5DE74572941AE /* YLPClient.h in Headers */,
-				41834E8712AC09590BE39A915DB01957 /* YLPClientPrivate.h in Headers */,
-				D5F9A3F86156870BB287DEABABCC8B67 /* YLPCoordinate.h in Headers */,
-				10B67C20EE1FD9F205506B839C3194E0 /* YLPLocation.h in Headers */,
-				630D88DEA5CFEF78BD5F51F5444B11ED /* YLPQuery.h in Headers */,
-				D00D84572384FC3887CD31052F286C19 /* YLPQueryPrivate.h in Headers */,
-				BA00CFDE90D890E7CDF2AA52CA5723B9 /* YLPResponsePrivate.h in Headers */,
-				CE7DB7120F11B68EC82142BF392C74C2 /* YLPReview.h in Headers */,
-				C66216258D2B622B2EDBDC60211D8CB3 /* YLPSearch.h in Headers */,
-				066B69142A9280EFE372B22A5609AE83 /* YLPSortType.h in Headers */,
-				B87C6E3EED4A0507C2B7FF4D09A4568D /* YLPUser.h in Headers */,
+				14C387ABBD97175D4792C8E128B91595 /* Pods-Food Truck FinderUITests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		85702C9B9F64FCFBCE573179B6BACD72 /* Headers */ = {
+		2582784E4FA6A1AC5D23FC53AC3F6EE2 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE82FA13B33A865D3C70CDB524BEBA89 /* Pods-Food Truck FinderTests-umbrella.h in Headers */,
+				F7B74645E07C39771156A1FA413B98D4 /* Alamofire-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CA54567B6C1CA5760AD61416F75C25CE /* Headers */ = {
+		3A636DC07487F1F2EE61A8AF38FA1666 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0D4C212CE40D0E9B867E14AD2A5D046 /* Pods-Food Truck Finder-umbrella.h in Headers */,
+				0C02ABEC760BF80131B37D63C73BE26B /* ObjectMapper-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E9E416509E35D5539D7215EF781E8A53 /* Headers */ = {
+		4EBCC266C45F17A23F3933843FD6A802 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25DE1640A971CCD37E410C35510483F7 /* Pods-Food Truck FinderUITests-umbrella.h in Headers */,
+				0DDE607E5509DE5093A4D9361CE7BEFB /* Pods-Food Truck FinderTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9887F1B4A5AC3C5D704FC541013D8FF3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24F808E4F13F5CBCA840B14274D86E74 /* CDYelpFusionKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C04495AE386B8490FA108CCDD3F6FAD9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28FB7D2AE173D7A32B3866FC2CBF587B /* AlamofireObjectMapper-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFC80735227E5A4686D67C25C17F6520 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35E83A665A651C6E91363E92B1434AB8 /* Pods-Food Truck Finder-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		3D5A00ABE2580BA3083154F9468461C8 /* YelpAPI */ = {
+		162E649F50FEC62B61BDD87D1BD422B4 /* ObjectMapper */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7CDCDDE64EF923855791E96625675DEA /* Build configuration list for PBXNativeTarget "YelpAPI" */;
+			buildConfigurationList = 5A0AA9E701B6E4DBCD533A34C21FA5B9 /* Build configuration list for PBXNativeTarget "ObjectMapper" */;
 			buildPhases = (
-				127713EF01E662A402132EBEF96CB642 /* Headers */,
-				9648A501D7659889EC3E54A129682D70 /* Sources */,
-				C41FDE1DF1ADB1FDA17186C72CC4B9EF /* Frameworks */,
-				8EF15624ECADFD7DCE924FF432D18CEA /* Resources */,
+				3A636DC07487F1F2EE61A8AF38FA1666 /* Headers */,
+				9E0C555BE2F8DBB03F19286C54D82AF8 /* Sources */,
+				AB533FA6985A920EFC83C26481CD6E6A /* Frameworks */,
+				1DF4F447094E9153EC8228413FE37C78 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = YelpAPI;
-			productName = YelpAPI;
-			productReference = F29AF2E0B12DADBEB21DD7FC3B12D97C /* YelpAPI.framework */;
+			name = ObjectMapper;
+			productName = ObjectMapper;
+			productReference = B9084FE779702931E8DF1D00A2D725FB /* ObjectMapper.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		7B9651D80A409A4CE148B2DF09014862 /* Pods-Food Truck FinderTests */ = {
+		3F64080413BB03C0B16BFEB621E6E0F2 /* AlamofireObjectMapper */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 86F452059C74205BE36A05850CBCB9E0 /* Build configuration list for PBXNativeTarget "Pods-Food Truck FinderTests" */;
+			buildConfigurationList = 22148808CA3FDF62D9C9AE13FDC8E411 /* Build configuration list for PBXNativeTarget "AlamofireObjectMapper" */;
 			buildPhases = (
-				85702C9B9F64FCFBCE573179B6BACD72 /* Headers */,
-				3B571276DCDDED4E34F83B9044A0AF12 /* Sources */,
-				6C037C7D5F9165B314CE21F96DF7CE6F /* Frameworks */,
-				B0629250585F6ED5E29A6DAA04D107B4 /* Resources */,
+				C04495AE386B8490FA108CCDD3F6FAD9 /* Headers */,
+				AEFEDEB78CD00D55F951B71088CF5B51 /* Sources */,
+				E70E68E2257E70ABF0DD978DF8DF1523 /* Frameworks */,
+				1B524A7746682A3360EAED50910ADB56 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				508C0A26E002B99B22A8C0BAF72AFB12 /* PBXTargetDependency */,
+				3FA7CF69E5D685AA30D537C8CB679E2D /* PBXTargetDependency */,
+				F65ACB1369D8850F40EB6CC8651FCE4C /* PBXTargetDependency */,
+			);
+			name = AlamofireObjectMapper;
+			productName = AlamofireObjectMapper;
+			productReference = 86822384CD379FCE373C2F755839B8DE /* AlamofireObjectMapper.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5006C20AE3E3CCD3606CF87CF4DB05B4 /* Pods-Food Truck FinderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BAD6E7875E1C6CD51F8D145F532DD95 /* Build configuration list for PBXNativeTarget "Pods-Food Truck FinderTests" */;
+			buildPhases = (
+				4EBCC266C45F17A23F3933843FD6A802 /* Headers */,
+				7A67AE149AB4C995629D71C5D7A30F30 /* Sources */,
+				1E2123CDB8A86CC48ABF5EFA0BB57D8D /* Frameworks */,
+				893C2B0653DB4A3F8C95331A5A6A0277 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				59072AA1155EA5E0E43E68EF7D19F7CF /* PBXTargetDependency */,
 			);
 			name = "Pods-Food Truck FinderTests";
 			productName = "Pods-Food Truck FinderTests";
-			productReference = 7AD03F01A83AFFC42BA5B3E5B78B2F23 /* Pods_Food_Truck_FinderTests.framework */;
+			productReference = 8416FB57E15C10AE5EF15B0E96E3B6CB /* Pods_Food_Truck_FinderTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		AA22BA8C24D09C12F40D7A454330748F /* Pods-Food Truck Finder */ = {
+		B81886F7291136528801E32127D98474 /* CDYelpFusionKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E83DA96A72B09ED7C771C532A38C7924 /* Build configuration list for PBXNativeTarget "Pods-Food Truck Finder" */;
+			buildConfigurationList = 296B57003AE72CBE4B98FA10329ED11E /* Build configuration list for PBXNativeTarget "CDYelpFusionKit" */;
 			buildPhases = (
-				CA54567B6C1CA5760AD61416F75C25CE /* Headers */,
-				CCA1B1B9D6EABC9612C32DD5E6FBBCBA /* Sources */,
-				E3A12C1B830802F21DD07F09EEE8CDC2 /* Frameworks */,
-				9A98DFBA7E0EC743116DCCCC1D738419 /* Resources */,
+				9887F1B4A5AC3C5D704FC541013D8FF3 /* Headers */,
+				A366A2D8731057E4D3BE67643A7F54DF /* Sources */,
+				E21691CFA3785FEE68D8E853495CC22D /* Frameworks */,
+				AEBBA8FE87E9D11F0087FF984713759F /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				89B34C4174983033692F66ACF3FC75A1 /* PBXTargetDependency */,
+				74FE08C4A9F2CE7197C514050EF85C8C /* PBXTargetDependency */,
+			);
+			name = CDYelpFusionKit;
+			productName = CDYelpFusionKit;
+			productReference = 82269EED4D8AA1B32CF1A51A08C189D2 /* CDYelpFusionKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CFC6657E0C09685939209499FFE37DEA /* Pods-Food Truck Finder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95D230B411F886DBD9084EF0D07CAFC4 /* Build configuration list for PBXNativeTarget "Pods-Food Truck Finder" */;
+			buildPhases = (
+				DFC80735227E5A4686D67C25C17F6520 /* Headers */,
+				2140B3EE77E4567C20D5FA12A9444356 /* Sources */,
+				189731A4590DC0F816DF6A362A6F8AB4 /* Frameworks */,
+				8657B151E5A31C82B547FA19AEECA88A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0C9BB3FB41A27B9F28F2D84DD3E8376E /* PBXTargetDependency */,
+				BCFA8169D4A657E034829B43E355CA4D /* PBXTargetDependency */,
+				DFF09433F235D7D9CFFD8C60C0286F52 /* PBXTargetDependency */,
+				7A94BED0F5361CB8193ACDDCE3E7F201 /* PBXTargetDependency */,
 			);
 			name = "Pods-Food Truck Finder";
 			productName = "Pods-Food Truck Finder";
-			productReference = 0C72D7ED465F78CB42C71BE84C330B9E /* Pods_Food_Truck_Finder.framework */;
+			productReference = 1ABCCE42FFC2F60091AC7E2153F10BE9 /* Pods_Food_Truck_Finder.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		AB1869990BEEB98F489C1779DF681D0B /* Pods-Food Truck FinderUITests */ = {
+		E7AB5DA31A7F2915CC8AE4BC84902DD7 /* Pods-Food Truck FinderUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 38089C3531C77E7777C4FED94BB43306 /* Build configuration list for PBXNativeTarget "Pods-Food Truck FinderUITests" */;
+			buildConfigurationList = EDE8DB01C4B5700157ABC80AC89F3937 /* Build configuration list for PBXNativeTarget "Pods-Food Truck FinderUITests" */;
 			buildPhases = (
-				E9E416509E35D5539D7215EF781E8A53 /* Headers */,
-				71CB01AC91570E5AD6B16185110D091F /* Sources */,
-				DBF450036594B63F39BFE5F03F464A8B /* Frameworks */,
-				49FB51202A6C8B33B62A2E5FEAE1418C /* Resources */,
+				0256662A86C1A6B10DCC8F5842F4BA45 /* Headers */,
+				1AE6C1670ED908F7DD2F7C9DD314AB5F /* Sources */,
+				369A1040F88871DA39974D1375DBA8D8 /* Frameworks */,
+				E5F43CCCADE577C89B2C930B0C0E6370 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2443CE0F9E1791A0B12A7F1EF5AD9F53 /* PBXTargetDependency */,
+				15DB68339876A1DAEA5705B8EF924D53 /* PBXTargetDependency */,
 			);
 			name = "Pods-Food Truck FinderUITests";
 			productName = "Pods-Food Truck FinderUITests";
-			productReference = 3AF46BB1C38FA4947AD6721E2FC28AEA /* Pods_Food_Truck_FinderUITests.framework */;
+			productReference = 2BA025190445A2566F0888B763A1B6AB /* Pods_Food_Truck_FinderUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4A5194ABAF7A4780609E0E581DA6B54 /* Build configuration list for PBXNativeTarget "Alamofire" */;
+			buildPhases = (
+				2582784E4FA6A1AC5D23FC53AC3F6EE2 /* Headers */,
+				2DDFD9AC10F181CD7130BDF5F9E0502B /* Sources */,
+				090C1D63463ACF622287EFF9D5C9392D /* Frameworks */,
+				473D3E892ABB6C798CFF290644259B34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Alamofire;
+			productName = Alamofire;
+			productReference = 5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -489,52 +859,77 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1020;
-				LastUpgradeCheck = 1020;
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 11.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = DA7D1C2BC8B21E9589D7EDE06EF472C2 /* Products */;
+			productRefGroup = 35F4062621E202DB3C2B7E298E4373F0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AA22BA8C24D09C12F40D7A454330748F /* Pods-Food Truck Finder */,
-				7B9651D80A409A4CE148B2DF09014862 /* Pods-Food Truck FinderTests */,
-				AB1869990BEEB98F489C1779DF681D0B /* Pods-Food Truck FinderUITests */,
-				3D5A00ABE2580BA3083154F9468461C8 /* YelpAPI */,
+				EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */,
+				3F64080413BB03C0B16BFEB621E6E0F2 /* AlamofireObjectMapper */,
+				B81886F7291136528801E32127D98474 /* CDYelpFusionKit */,
+				162E649F50FEC62B61BDD87D1BD422B4 /* ObjectMapper */,
+				CFC6657E0C09685939209499FFE37DEA /* Pods-Food Truck Finder */,
+				5006C20AE3E3CCD3606CF87CF4DB05B4 /* Pods-Food Truck FinderTests */,
+				E7AB5DA31A7F2915CC8AE4BC84902DD7 /* Pods-Food Truck FinderUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		49FB51202A6C8B33B62A2E5FEAE1418C /* Resources */ = {
+		1B524A7746682A3360EAED50910ADB56 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8EF15624ECADFD7DCE924FF432D18CEA /* Resources */ = {
+		1DF4F447094E9153EC8228413FE37C78 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9A98DFBA7E0EC743116DCCCC1D738419 /* Resources */ = {
+		473D3E892ABB6C798CFF290644259B34 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B0629250585F6ED5E29A6DAA04D107B4 /* Resources */ = {
+		8657B151E5A31C82B547FA19AEECA88A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		893C2B0653DB4A3F8C95331A5A6A0277 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEBBA8FE87E9D11F0087FF984713759F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D15DDC006C55D897E728B576AC48521C /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5F43CCCADE577C89B2C930B0C0E6370 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -544,80 +939,196 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3B571276DCDDED4E34F83B9044A0AF12 /* Sources */ = {
+		1AE6C1670ED908F7DD2F7C9DD314AB5F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1AE1226C62053A580065D18C6DA3FC4 /* Pods-Food Truck FinderTests-dummy.m in Sources */,
+				3509D673F0ED2ECC73FC824F4E9E696E /* Pods-Food Truck FinderUITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		71CB01AC91570E5AD6B16185110D091F /* Sources */ = {
+		2140B3EE77E4567C20D5FA12A9444356 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7C6014EF96600CD17FCD3E95CA0452B /* Pods-Food Truck FinderUITests-dummy.m in Sources */,
+				F3DA88A4C2F679ED9797294C5F5F8A3C /* Pods-Food Truck Finder-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9648A501D7659889EC3E54A129682D70 /* Sources */ = {
+		2DDFD9AC10F181CD7130BDF5F9E0502B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C1CF5434CE89E568FD561445186D5FE /* NSDictionary+YLPUtils.m in Sources */,
-				5D33E7B1B38DC682BF9688EFD94EB3F3 /* YelpAPI-dummy.m in Sources */,
-				0C33798C84EDED24A94D983B497303BD /* YLPBusiness.m in Sources */,
-				F59BC466BE64D5842173E3E6BFC0160A /* YLPBusinessReviews.m in Sources */,
-				CE0B39CE59297C5905D474B2D6ACD07C /* YLPCategory.m in Sources */,
-				65276AFB2AAF32830F8249A616A45016 /* YLPClient+Business.m in Sources */,
-				089BA707288EC6587EEC34D6B4D39F8B /* YLPClient+PhoneSearch.m in Sources */,
-				7219D279FE73990FDA19A459CA718347 /* YLPClient+Reviews.m in Sources */,
-				05501B79E27C1FBE5BB0A06E26D32876 /* YLPClient+Search.m in Sources */,
-				C52060C44229822D10FACDA7B2C47D83 /* YLPClient.m in Sources */,
-				D6C406B68AA0A16C180FE61667963EA8 /* YLPCoordinate.m in Sources */,
-				C44E434B60C93E0C27918FAC531E74BB /* YLPLocation.m in Sources */,
-				1CF800986968B6B23CDBD88EE00DF551 /* YLPQuery.m in Sources */,
-				24C73F1A017A13C8231D1A740690B99D /* YLPReview.m in Sources */,
-				C59505531B3525E5906B239C2DC89E57 /* YLPSearch.m in Sources */,
-				2C95A203EADAAE5755BBAEE624F6EF4B /* YLPUser.m in Sources */,
+				83956E20859CDBBE7BC38ABADE0170FB /* AFError.swift in Sources */,
+				1945CD5D63A1C164AEAAA9A33E85571E /* Alamofire-dummy.m in Sources */,
+				BEE6B677416CA71C981D1D3F60B18C96 /* Alamofire.swift in Sources */,
+				D3D8C379C6E4FB487E5ABD6800AD7B7E /* DispatchQueue+Alamofire.swift in Sources */,
+				1986B50C74F1697EA43F68335C93CEB3 /* MultipartFormData.swift in Sources */,
+				3571F958A3907B3A806E62D50C2550D4 /* NetworkReachabilityManager.swift in Sources */,
+				132E0F619E4338E5D1B27E4C72076B3F /* Notifications.swift in Sources */,
+				0C5E11DE24DAA737704B355F5F2F3426 /* ParameterEncoding.swift in Sources */,
+				98A929C8E9012AB167672714FFD2113C /* Request.swift in Sources */,
+				D65C254F5ABF2CB5ECEE50FE8F8E1A80 /* Response.swift in Sources */,
+				E3747EC31FCCA97D75A81FC700CF7E24 /* ResponseSerialization.swift in Sources */,
+				64744C911253C3E01461FAD7C935C8D7 /* Result.swift in Sources */,
+				F13F2AA7F2E6D95A181CAB99B900D531 /* ServerTrustPolicy.swift in Sources */,
+				2C61B040BA6A9A7AE66C4D9BA26D5520 /* SessionDelegate.swift in Sources */,
+				931BBB8230A25161D5C37528A8F9FECF /* SessionManager.swift in Sources */,
+				AFC64B1097F7355FF423D6A73E9C7210 /* TaskDelegate.swift in Sources */,
+				933FDA5970AA525D6CB92BFEBA2BAB4A /* Timeline.swift in Sources */,
+				53791F5E5F07400F92CFDFC89A432305 /* Validation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CCA1B1B9D6EABC9612C32DD5E6FBBCBA /* Sources */ = {
+		7A67AE149AB4C995629D71C5D7A30F30 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				976EAA2FBE846001C32808A14E9BD8AB /* Pods-Food Truck Finder-dummy.m in Sources */,
+				FE5B2D17567216CF483CB72B14F3803A /* Pods-Food Truck FinderTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E0C555BE2F8DBB03F19286C54D82AF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1270F4E601423EF36FE824207169002A /* CodableTransform.swift in Sources */,
+				A68986E13F5E041F5BA4A6AA4D5B9455 /* CustomDateFormatTransform.swift in Sources */,
+				A18477E61881F5B1F0FCA4CA2667DCBC /* DataTransform.swift in Sources */,
+				AB8E2E1B150FD7C2D1336F2DD8B48853 /* DateFormatterTransform.swift in Sources */,
+				B28A92AA7D5CE9A97C4AABBFADA59EDD /* DateTransform.swift in Sources */,
+				EE97F345DCB9A549EF71232B8B19C421 /* DictionaryTransform.swift in Sources */,
+				19A14163D1B85BA2674C47C08DD42F3B /* EnumOperators.swift in Sources */,
+				4C6D5D1CC894D8853ACBF2FB5FE40EC5 /* EnumTransform.swift in Sources */,
+				9143E20A63CFBC740AECDCFE909F5A33 /* FromJSON.swift in Sources */,
+				61CFA5456E6B3B612AFBE85C6C9D4D10 /* HexColorTransform.swift in Sources */,
+				C0B393B80CD971349123D9F02DFDD554 /* ImmutableMappable.swift in Sources */,
+				38BF4EEFE885A6E3BA892C96F24F8723 /* IntegerOperators.swift in Sources */,
+				E0C1244422C284ED4A6CA575318EE275 /* ISO8601DateTransform.swift in Sources */,
+				CD7E9B96B8B49215D4E1F99DE1F2821C /* Map.swift in Sources */,
+				A5AA0CB9BFE983E769FEBB95186787A4 /* MapError.swift in Sources */,
+				1C4E35F55A6329617D438B149650AD87 /* Mappable.swift in Sources */,
+				F2D4806385A7E84C6FFCFEB93C089B0F /* Mapper.swift in Sources */,
+				91BA956F3C83DD73EDC9E6842FAFA5C1 /* NSDecimalNumberTransform.swift in Sources */,
+				CFD70C4512BE496D2CFA66C1F07D0743 /* ObjectMapper-dummy.m in Sources */,
+				D298E3A34E428388DEF4B1708F23BE55 /* Operators.swift in Sources */,
+				D77545145A5D9E4053D6A121CED76362 /* ToJSON.swift in Sources */,
+				72E902B0D6D593657CC38405EE1118A1 /* TransformOf.swift in Sources */,
+				937FC411CB6833D68407CFC5F97CE68D /* TransformOperators.swift in Sources */,
+				7AA1A5A48A4182B11CFA792714C82631 /* TransformType.swift in Sources */,
+				1A6FB23F6D6908396FB5FE61D9A76FB5 /* URLTransform.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A366A2D8731057E4D3BE67643A7F54DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				449FF0C4FB7DD4920077D158FD6ED572 /* CDColor+CDYelpFusionKit.swift in Sources */,
+				581E42349FAD9A3B48E5B2E97DC40EB1 /* CDColor.swift in Sources */,
+				787889719C266AB1DF83F53100649F2E /* CDImage+CDYelpFusionKit.swift in Sources */,
+				B671F3658F354AFEEF6D5E14A12A6D2B /* CDImage.swift in Sources */,
+				28493F658DEDD649A8177A3753755022 /* CDYelpAPIClient.swift in Sources */,
+				71D527C5D04EA2077894115DF92E3E4B /* CDYelpAutoCompleteResponse.swift in Sources */,
+				094E89BCC06E6855EB19650736CDAC40 /* CDYelpBusiness.swift in Sources */,
+				B24574B1B035F12593EFB4E40BB8CFE3 /* CDYelpBusinessResponse.swift in Sources */,
+				191BFAE8CB14A744F13247EC6F51A78D /* CDYelpCategory.swift in Sources */,
+				EFB76CB2F49173BCA52882487998F27F /* CDYelpCenter.swift in Sources */,
+				9B05BDBC1B882D02C0D5A2610AD1B76A /* CDYelpConstants.swift in Sources */,
+				A13448FDE83106326250D09DFC08E4C2 /* CDYelpCoordinates.swift in Sources */,
+				ACF095BC811F628AC6108B6A718E8A82 /* CDYelpEnums.swift in Sources */,
+				9FC40D9C897357BAA5979D32410BBB8F /* CDYelpError.swift in Sources */,
+				EE7F0572D98EDED49AFD713D0D226587 /* CDYelpEvent.swift in Sources */,
+				E7CF1525E0849DCF07DE424084B6EF8E /* CDYelpEventsResponse.swift in Sources */,
+				1CCE747994C6FA4BE94B68403ECB55FA /* CDYelpFusionKit-dummy.m in Sources */,
+				003BC94FA0629F27D07D56F25BDECCFB /* CDYelpHour.swift in Sources */,
+				89B2A15EBCAC53BC2037677ACBE7284D /* CDYelpLocation.swift in Sources */,
+				B818D46A3665C6DA932C621A0C03CF87 /* CDYelpOpen.swift in Sources */,
+				23927648BDBC1C1FAE533B9132701987 /* CDYelpRegion.swift in Sources */,
+				A5DAEB5895FF59F714280329E8C57645 /* CDYelpReview.swift in Sources */,
+				9B2DD2DF549A13CF73C58423F6CEDB90 /* CDYelpReviewsResponse.swift in Sources */,
+				C2E72CE21C3B17F03B7C998BAA32EB51 /* CDYelpRouter.swift in Sources */,
+				4D40C323A0AA66836903ACAD40A2ADF7 /* CDYelpSearchResponse.swift in Sources */,
+				3D290631D1092DEB36C3915B51340296 /* CDYelpTerm.swift in Sources */,
+				895099418459BE38A5EAAA68CE72C491 /* CDYelpUser.swift in Sources */,
+				DF195FBE065E1FF6AFDB52E63858F916 /* Parameters+CDYelpFusionKit.swift in Sources */,
+				21B906EE1C7B9C708BC80A6D68503B26 /* String+CDYelpFusionKit.swift in Sources */,
+				BED733B9F9DCD421252341AE86A94351 /* URL+CDYelpFusionKit.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEFEDEB78CD00D55F951B71088CF5B51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				536AE5E0C47A0C546EF96C64C2BC819A /* AlamofireObjectMapper-dummy.m in Sources */,
+				7FBF6626FC5EFF4FBDE27F192BD0FE1C /* AlamofireObjectMapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2443CE0F9E1791A0B12A7F1EF5AD9F53 /* PBXTargetDependency */ = {
+		0C9BB3FB41A27B9F28F2D84DD3E8376E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */;
+			targetProxy = 5B5E6DC32B15CF44B2E5B611E6570BB2 /* PBXContainerItemProxy */;
+		};
+		15DB68339876A1DAEA5705B8EF924D53 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-Food Truck Finder";
-			target = AA22BA8C24D09C12F40D7A454330748F /* Pods-Food Truck Finder */;
-			targetProxy = D96A81D07AF8F800C59F5F53E00E54EB /* PBXContainerItemProxy */;
+			target = CFC6657E0C09685939209499FFE37DEA /* Pods-Food Truck Finder */;
+			targetProxy = 2B5B9CFCA2AC3B3E62C6EB62D92E41BF /* PBXContainerItemProxy */;
 		};
-		508C0A26E002B99B22A8C0BAF72AFB12 /* PBXTargetDependency */ = {
+		3FA7CF69E5D685AA30D537C8CB679E2D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */;
+			targetProxy = 5ECF06DB1D5F0B0EB4082D2C0AE76ED0 /* PBXContainerItemProxy */;
+		};
+		59072AA1155EA5E0E43E68EF7D19F7CF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-Food Truck Finder";
-			target = AA22BA8C24D09C12F40D7A454330748F /* Pods-Food Truck Finder */;
-			targetProxy = 1D5F54D61B6DEB6C37A90286C1B00677 /* PBXContainerItemProxy */;
+			target = CFC6657E0C09685939209499FFE37DEA /* Pods-Food Truck Finder */;
+			targetProxy = 6A5CBFCE22C558CA118E6C16210B5CA3 /* PBXContainerItemProxy */;
 		};
-		89B34C4174983033692F66ACF3FC75A1 /* PBXTargetDependency */ = {
+		74FE08C4A9F2CE7197C514050EF85C8C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = YelpAPI;
-			target = 3D5A00ABE2580BA3083154F9468461C8 /* YelpAPI */;
-			targetProxy = 890313A44AA211CE534EB7CB945CB2E0 /* PBXContainerItemProxy */;
+			name = AlamofireObjectMapper;
+			target = 3F64080413BB03C0B16BFEB621E6E0F2 /* AlamofireObjectMapper */;
+			targetProxy = E3DD0258E27C9B451F8423B1E80881BE /* PBXContainerItemProxy */;
+		};
+		7A94BED0F5361CB8193ACDDCE3E7F201 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ObjectMapper;
+			target = 162E649F50FEC62B61BDD87D1BD422B4 /* ObjectMapper */;
+			targetProxy = 24DE6173B44684115CF7F41F9229E490 /* PBXContainerItemProxy */;
+		};
+		BCFA8169D4A657E034829B43E355CA4D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AlamofireObjectMapper;
+			target = 3F64080413BB03C0B16BFEB621E6E0F2 /* AlamofireObjectMapper */;
+			targetProxy = 8353D1A58CE282A123287470DD380D89 /* PBXContainerItemProxy */;
+		};
+		DFF09433F235D7D9CFFD8C60C0286F52 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CDYelpFusionKit;
+			target = B81886F7291136528801E32127D98474 /* CDYelpFusionKit */;
+			targetProxy = B9048CE5B9623452DB8CA8AEEBF49CEE /* PBXContainerItemProxy */;
+		};
+		F65ACB1369D8850F40EB6CC8651FCE4C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ObjectMapper;
+			target = 162E649F50FEC62B61BDD87D1BD422B4 /* ObjectMapper */;
+			targetProxy = F39709105C89A2EC0D9704C112AF51B4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1106BE8323B0B475CA5E18440882B18B /* Release */ = {
+		0B4760B3B9AFF942B6019E5CD456214C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CD8BC6D44BBF9A7AD9BDD82DBDF8BF29 /* YelpAPI.xcconfig */;
+			baseConfigurationReference = 53BA0BA9AC1898CAA326AEA727D324CC /* AlamofireObjectMapper.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -628,8 +1139,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/YelpAPI/YelpAPI-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/YelpAPI/YelpAPI-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/AlamofireObjectMapper/AlamofireObjectMapper-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AlamofireObjectMapper/AlamofireObjectMapper-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -637,13 +1148,13 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/YelpAPI/YelpAPI.modulemap";
-				PRODUCT_MODULE_NAME = YelpAPI;
-				PRODUCT_NAME = YelpAPI;
+				MODULEMAP_FILE = "Target Support Files/AlamofireObjectMapper/AlamofireObjectMapper.modulemap";
+				PRODUCT_MODULE_NAME = AlamofireObjectMapper;
+				PRODUCT_NAME = AlamofireObjectMapper;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -651,7 +1162,178 @@
 			};
 			name = Release;
 		};
-		204B8AEA4AE90A551A1768B355C2F9F0 /* Debug */ = {
+		1032B0780CAC3F6CD936DEF37E0E0E5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		1A3D24517074F5D8BD0130029B351A71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F24D0A4836199215E1A3D126C6F2545 /* Pods-Food Truck FinderTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Food Truck FinderTests/Pods-Food Truck FinderTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Food Truck FinderTests/Pods-Food Truck FinderTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		34F321F65BC8F1C7320E6D28E2DA290B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B0915D6B00924A47676AB182CCEECFA /* CDYelpFusionKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CDYelpFusionKit/CDYelpFusionKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CDYelpFusionKit/CDYelpFusionKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CDYelpFusionKit/CDYelpFusionKit.modulemap";
+				PRODUCT_MODULE_NAME = CDYelpFusionKit;
+				PRODUCT_NAME = CDYelpFusionKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		35C76680DCCC7572B602946CC50A91A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0724455318DEDF845E339490A878C32 /* Pods-Food Truck FinderUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Food Truck FinderUITests/Pods-Food Truck FinderUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Food Truck FinderUITests/Pods-Food Truck FinderUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3DCABF71ABF98C4E186DBF23A89D8D7F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -702,7 +1384,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -715,9 +1397,47 @@
 			};
 			name = Debug;
 		};
-		22FFC1A4C74F68523355258FD377DF22 /* Debug */ = {
+		4C1984F8ED070C908A8F733851F2FE28 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CD8BC6D44BBF9A7AD9BDD82DBDF8BF29 /* YelpAPI.xcconfig */;
+			baseConfigurationReference = AC28194196EE5A91265AD121DA3BB98F /* Pods-Food Truck Finder.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Food Truck Finder/Pods-Food Truck Finder-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Food Truck Finder/Pods-Food Truck Finder.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		67FCCF1C9BA7597C9E6827529C4EE8E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA4C3E81BD9E5B80C1637D88B6AD1D40 /* ObjectMapper.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -728,8 +1448,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/YelpAPI/YelpAPI-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/YelpAPI/YelpAPI-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/ObjectMapper/ObjectMapper-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ObjectMapper/ObjectMapper-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -737,9 +1457,45 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/YelpAPI/YelpAPI.modulemap";
-				PRODUCT_MODULE_NAME = YelpAPI;
-				PRODUCT_NAME = YelpAPI;
+				MODULEMAP_FILE = "Target Support Files/ObjectMapper/ObjectMapper.modulemap";
+				PRODUCT_MODULE_NAME = ObjectMapper;
+				PRODUCT_NAME = ObjectMapper;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6B753B66FEBF4CA69CDD98684629C296 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA4C3E81BD9E5B80C1637D88B6AD1D40 /* ObjectMapper.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ObjectMapper/ObjectMapper-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ObjectMapper/ObjectMapper-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ObjectMapper/ObjectMapper.modulemap";
+				PRODUCT_MODULE_NAME = ObjectMapper;
+				PRODUCT_NAME = ObjectMapper;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -750,9 +1506,9 @@
 			};
 			name = Debug;
 		};
-		274200BE4F7A67814D295E1D86901A9D /* Release */ = {
+		722CC5D91F92D5236D0312EA531F2B63 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3DEFF5119254D7F16EF0ADE734D9BA29 /* Pods-Food Truck Finder.release.xcconfig */;
+			baseConfigurationReference = E8696AA769CFB72CB5FFCF6F891C4334 /* Pods-Food Truck FinderTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -765,16 +1521,16 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Food Truck Finder/Pods-Food Truck Finder-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-Food Truck FinderTests/Pods-Food Truck FinderTests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Food Truck Finder/Pods-Food Truck Finder.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-Food Truck FinderTests/Pods-Food Truck FinderTests.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -789,107 +1545,154 @@
 			};
 			name = Release;
 		};
-		3CCC6195EDBEE5DA2A49DF962113BE16 /* Release */ = {
+		75BBB760DFD877E344322B54D29DFE64 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D6AEA1956CBCC939EB9A89F1B2B7A5F /* Alamofire.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Alamofire-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
 				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				PRODUCT_MODULE_NAME = Alamofire;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9AEBE572FF756E45299A4B1EF1F0A02B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53BA0BA9AC1898CAA326AEA727D324CC /* AlamofireObjectMapper.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AlamofireObjectMapper/AlamofireObjectMapper-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AlamofireObjectMapper/AlamofireObjectMapper-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/AlamofireObjectMapper/AlamofireObjectMapper.modulemap";
+				PRODUCT_MODULE_NAME = AlamofireObjectMapper;
+				PRODUCT_NAME = AlamofireObjectMapper;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9AECEC00910F29F058AFEFDBAE3A123F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4A024FEA4E67B689E352A73AD8187E8 /* Pods-Food Truck FinderUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Food Truck FinderUITests/Pods-Food Truck FinderUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Food Truck FinderUITests/Pods-Food Truck FinderUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A832093623625009E32009138E435042 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B0915D6B00924A47676AB182CCEECFA /* CDYelpFusionKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CDYelpFusionKit/CDYelpFusionKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CDYelpFusionKit/CDYelpFusionKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CDYelpFusionKit/CDYelpFusionKit.modulemap";
+				PRODUCT_MODULE_NAME = CDYelpFusionKit;
+				PRODUCT_NAME = CDYelpFusionKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.0;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		56BCD57C2A5B7362479A743DDEC29FDF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3735EFA445160B752D4451F98CC0BF2E /* Pods-Food Truck FinderTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Food Truck FinderTests/Pods-Food Truck FinderTests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Food Truck FinderTests/Pods-Food Truck FinderTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
-		5EC05400B971F265DBDE389A551D7470 /* Debug */ = {
+		E93FF487A2DA48A571108111A5C3A80D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0B5FC5E014F576CADD75503431A8D90C /* Pods-Food Truck Finder.debug.xcconfig */;
+			baseConfigurationReference = BA625CD636424F6A284C99F837E12D08 /* Pods-Food Truck Finder.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -904,7 +1707,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-Food Truck Finder/Pods-Food Truck Finder-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -920,56 +1723,16 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		640FD64677BF3F8C8CF211A58716B858 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F59794310A840F364C8A410FA4089C42 /* Pods-Food Truck FinderTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Food Truck FinderTests/Pods-Food Truck FinderTests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Food Truck FinderTests/Pods-Food Truck FinderTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		7D48E0BFAE0D0FFF853AAF81110E7440 /* Debug */ = {
+		F94FD07C591B17B7E61A1528AB9BCB3B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 96378F2A8BCB7054EE4382BC935EBBBC /* Pods-Food Truck FinderUITests.debug.xcconfig */;
+			baseConfigurationReference = 9D6AEA1956CBCC939EB9A89F1B2B7A5F /* Alamofire.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -979,61 +1742,22 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Food Truck FinderUITests/Pods-Food Truck FinderUITests-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Alamofire-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Food Truck FinderUITests/Pods-Food Truck FinderUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				PRODUCT_MODULE_NAME = Alamofire;
+				PRODUCT_NAME = Alamofire;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		B0369F9E76B8A4E38991256FABE9783A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1A49BEBF2D6A592520C2900031385D23 /* Pods-Food Truck FinderUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Food Truck FinderUITests/Pods-Food Truck FinderUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Food Truck FinderUITests/Pods-Food Truck FinderUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1044,11 +1768,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		38089C3531C77E7777C4FED94BB43306 /* Build configuration list for PBXNativeTarget "Pods-Food Truck FinderUITests" */ = {
+		22148808CA3FDF62D9C9AE13FDC8E411 /* Build configuration list for PBXNativeTarget "AlamofireObjectMapper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7D48E0BFAE0D0FFF853AAF81110E7440 /* Debug */,
-				B0369F9E76B8A4E38991256FABE9783A /* Release */,
+				9AEBE572FF756E45299A4B1EF1F0A02B /* Debug */,
+				0B4760B3B9AFF942B6019E5CD456214C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		296B57003AE72CBE4B98FA10329ED11E /* Build configuration list for PBXNativeTarget "CDYelpFusionKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34F321F65BC8F1C7320E6D28E2DA290B /* Debug */,
+				A832093623625009E32009138E435042 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1056,35 +1789,53 @@
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				204B8AEA4AE90A551A1768B355C2F9F0 /* Debug */,
-				3CCC6195EDBEE5DA2A49DF962113BE16 /* Release */,
+				3DCABF71ABF98C4E186DBF23A89D8D7F /* Debug */,
+				1032B0780CAC3F6CD936DEF37E0E0E5C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7CDCDDE64EF923855791E96625675DEA /* Build configuration list for PBXNativeTarget "YelpAPI" */ = {
+		4BAD6E7875E1C6CD51F8D145F532DD95 /* Build configuration list for PBXNativeTarget "Pods-Food Truck FinderTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				22FFC1A4C74F68523355258FD377DF22 /* Debug */,
-				1106BE8323B0B475CA5E18440882B18B /* Release */,
+				1A3D24517074F5D8BD0130029B351A71 /* Debug */,
+				722CC5D91F92D5236D0312EA531F2B63 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		86F452059C74205BE36A05850CBCB9E0 /* Build configuration list for PBXNativeTarget "Pods-Food Truck FinderTests" */ = {
+		5A0AA9E701B6E4DBCD533A34C21FA5B9 /* Build configuration list for PBXNativeTarget "ObjectMapper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				56BCD57C2A5B7362479A743DDEC29FDF /* Debug */,
-				640FD64677BF3F8C8CF211A58716B858 /* Release */,
+				6B753B66FEBF4CA69CDD98684629C296 /* Debug */,
+				67FCCF1C9BA7597C9E6827529C4EE8E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E83DA96A72B09ED7C771C532A38C7924 /* Build configuration list for PBXNativeTarget "Pods-Food Truck Finder" */ = {
+		95D230B411F886DBD9084EF0D07CAFC4 /* Build configuration list for PBXNativeTarget "Pods-Food Truck Finder" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5EC05400B971F265DBDE389A551D7470 /* Debug */,
-				274200BE4F7A67814D295E1D86901A9D /* Release */,
+				4C1984F8ED070C908A8F733851F2FE28 /* Debug */,
+				E93FF487A2DA48A571108111A5C3A80D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4A5194ABAF7A4780609E0E581DA6B54 /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75BBB760DFD877E344322B54D29DFE64 /* Debug */,
+				F94FD07C591B17B7E61A1528AB9BCB3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDE8DB01C4B5700157ABC80AC89F3937 /* Build configuration list for PBXNativeTarget "Pods-Food Truck FinderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35C76680DCCC7572B602946CC50A91A9 /* Debug */,
+				9AECEC00910F29F058AFEFDBAE3A123F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

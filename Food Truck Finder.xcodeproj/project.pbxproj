@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1438D4AA246CB4BD00AB6A13 /* YelpSearchDriver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438D4A9246CB4BD00AB6A13 /* YelpSearchDriver.swift */; };
+		1438D4AC246CB82900AB6A13 /* HomeVCSearchResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438D4AB246CB82900AB6A13 /* HomeVCSearchResultViewModel.swift */; };
 		14CD945024589C0F008EC86A /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CD944F24589C0F008EC86A /* HomeCoordinator.swift */; };
 		7F30FE0724563932089F7EA8 /* Pods_Food_Truck_Finder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EBB9BAC48D416BE1C008FDB /* Pods_Food_Truck_Finder.framework */; };
 		AADA59C7334FCDAAE6BA4713 /* Pods_Food_Truck_FinderUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA6A1784E21C01A61EF56A57 /* Pods_Food_Truck_FinderUITests.framework */; };
@@ -40,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1438D4A9246CB4BD00AB6A13 /* YelpSearchDriver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YelpSearchDriver.swift; sourceTree = "<group>"; };
+		1438D4AB246CB82900AB6A13 /* HomeVCSearchResultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVCSearchResultViewModel.swift; sourceTree = "<group>"; };
 		14CD944F24589C0F008EC86A /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 		1EBB9BAC48D416BE1C008FDB /* Pods_Food_Truck_Finder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Food_Truck_Finder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		28B9E28FC7F54A3AC4E76785 /* Pods-Food Truck FinderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Food Truck FinderTests.release.xcconfig"; path = "Target Support Files/Pods-Food Truck FinderTests/Pods-Food Truck FinderTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -116,6 +120,8 @@
 				FA719EB2228C6F2200545EB5 /* HomeViewController.xib */,
 				FAC852642297A18B00CB98C8 /* SearchResultTableViewCell.swift */,
 				FAC852662297A3FA00CB98C8 /* SearchResultTableViewCell.xib */,
+				1438D4A9246CB4BD00AB6A13 /* YelpSearchDriver.swift */,
+				1438D4AB246CB82900AB6A13 /* HomeVCSearchResultViewModel.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -349,16 +355,11 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Food Truck Finder/Pods-Food Truck Finder-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/YelpAPI/YelpAPI.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-Food Truck Finder/Pods-Food Truck Finder-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YelpAPI.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-Food Truck Finder/Pods-Food Truck Finder-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -417,9 +418,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAC852652297A18B00CB98C8 /* SearchResultTableViewCell.swift in Sources */,
+				1438D4AA246CB4BD00AB6A13 /* YelpSearchDriver.swift in Sources */,
 				FA719E85228C677200545EB5 /* Food_Truck_Finder.xcdatamodeld in Sources */,
 				FA719E7D228C677200545EB5 /* AppDelegate.swift in Sources */,
 				FA719EB0228C6F0000545EB5 /* HomeViewController.swift in Sources */,
+				1438D4AC246CB82900AB6A13 /* HomeVCSearchResultViewModel.swift in Sources */,
 				14CD945024589C0F008EC86A /* HomeCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,7 +9,6 @@
 import Foundation
 import UIKit
 import MapKit
-import YelpAPI
 
 class HomeViewController: UIViewController, MKMapViewDelegate, UITableViewDelegate, UITableViewDataSource, CLLocationManagerDelegate, UITextFieldDelegate {
     
@@ -24,7 +23,6 @@ class HomeViewController: UIViewController, MKMapViewDelegate, UITableViewDelega
     @IBOutlet weak var table: UITableView!
     @IBOutlet weak var refreshButton: UIButton!
     
-    var Yelp:YLPClient!
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
     let LocationManager:CLLocationManager = CLLocationManager.init()
@@ -35,14 +33,8 @@ class HomeViewController: UIViewController, MKMapViewDelegate, UITableViewDelega
         }
     }
     
-    var searchResultsArray:[YLPBusiness]?
-
-    //var searchesArray
-    
-    
     override func viewDidLoad() {
         super .viewDidLoad()
-        Yelp = appDelegate.getYelpObject()
         LocationManager.delegate = self
         
         LocationManager.requestWhenInUseAuthorization()
@@ -105,57 +97,6 @@ class HomeViewController: UIViewController, MKMapViewDelegate, UITableViewDelega
         return true
     }
     
-    private func handleYLPSearchResult(_ searchResult: YLPSearch?) {
-        if let businessArray = searchResult?.businesses {
-            print(businessArray)
-            if let filteredArray = self.filterOutNonFoodTrucks(businessArray) {
-                self.searchResultsArray = filteredArray
-                self.table.reloadData()
-                self.addAnnotationsFromArray(businessArray: filteredArray)
-            } else {
-                // TODO: alert no businesses matched your results
-            }
-            
-        } else {
-            // TODO: alert. No businesses returned in the array
-        }
-    }
-    
-    private func filterOutNonFoodTrucks(_ arrayOfBusinesses:[YLPBusiness]) -> [YLPBusiness]? {
-        var foodtrucks:[YLPBusiness] = Array()
-        for business in arrayOfBusinesses {
-            for category in business.categories {
-                if(category.name == filterFood_Trucks || category.name == filterfoodtruck || category.alias == filterFood_Trucks || category.alias == filterfoodtruck) {
-                    foodtrucks.append(business)
-                }
-            }
-        }
-        if foodtrucks.count == 0 {
-            return nil
-        } else {
-            return foodtrucks
-        }
-    }
-    
-    private func addAnnotationsFromArray(businessArray:[YLPBusiness]!) {
-        //reset map annotations
-        map.removeAnnotations(map.annotations)
-        
-        for business in businessArray {
-            if let YLPCoordinate = business.location.coordinate {
-                let coordinate = CLLocationCoordinate2D.init(latitude: YLPCoordinate.latitude, longitude: YLPCoordinate.longitude)
-                let annotation = MKPointAnnotation()
-                annotation.title = business.name
-                
-                annotation.coordinate = CLLocationCoordinate2D.init(latitude: coordinate.latitude, longitude: coordinate.longitude)
-                map.addAnnotation(annotation)
-                
-            } else {
-                
-            }
-        }
-    }
-    
     // MARK: Button Delegates
     @IBAction func tableHeightButtonPressed(_ sender: Any) {
         
@@ -166,10 +107,9 @@ class HomeViewController: UIViewController, MKMapViewDelegate, UITableViewDelega
     }
     
     
-    
     // MARK: TableView
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return searchResultsArray?.count ?? 0;
+        return 0//pull from viewModel created by search result
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -178,9 +118,10 @@ class HomeViewController: UIViewController, MKMapViewDelegate, UITableViewDelega
             cell = SearchResultTableViewCell()
         }
         
-        if let business = searchResultsArray?[indexPath.row] {
-            cell?.configureWithBusiness(business)
-        }
+        //get a HomeVCSearchResultViewModel from searchResult ViewModel
+//        if let business =  {
+//            cell?.configureWithBusiness(business)
+//        }
         
         return cell!
     }
