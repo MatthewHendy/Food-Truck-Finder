@@ -29,6 +29,12 @@ class HomeViewController: UIViewController, MKMapViewDelegate, UITableViewDelega
     
     let LocationManager:CLLocationManager = CLLocationManager.init()
     
+    var cityAndState: (String, String)? {
+        didSet {
+            searchTextField.isEnabled = true
+        }
+    }
+    
     var searchResultsArray:[YLPBusiness]?
 
     //var searchesArray
@@ -40,10 +46,10 @@ class HomeViewController: UIViewController, MKMapViewDelegate, UITableViewDelega
         LocationManager.delegate = self
         
         LocationManager.requestWhenInUseAuthorization()
-        LocationManager.startUpdatingLocation()
         
         table.register(UINib.init(nibName: "SearchResultTableViewCell", bundle: nil), forCellReuseIdentifier: searchResultCell)
         
+        self.searchTextField.isEnabled = false
         self.navigationItem.title = "Food Truck Finder"
     }
     
@@ -55,22 +61,42 @@ class HomeViewController: UIViewController, MKMapViewDelegate, UITableViewDelega
     override func viewDidAppear(_ animated: Bool) {
         super .viewDidAppear(animated)
         
+        LocationManager.startUpdatingLocation()
+        map.setUserTrackingMode(MKUserTrackingMode.follow, animated: true)
     }
     
     // MARK: Location Manager Delegates
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         
+        guard let location = locations.first else {
+            return
+        }
+        
+        setMainAreaOnMap(location.coordinate.latitude, location.coordinate.longitude)
+        
+        let geocoder:CLGeocoder = CLGeocoder.init()
+        
+        geocoder.reverseGeocodeLocation(location) { (arrayOfResults, error) in
+            if let placemark = arrayOfResults?[0],
+                let city = placemark.locality,
+                let state = placemark.administrativeArea {
+                
+                self.cityAndState = (city, state)
+                manager.stopUpdatingLocation()
+            } else {
+                //show error
+                print("cant find the placemark, city or state")
+            }
+        }
     }
     
     private func setMainAreaOnMap(_ latitude: CLLocationDegrees, _ longitude:CLLocationDegrees) {
-        map.setUserTrackingMode(MKUserTrackingMode.follow, animated: true)
         map.setCenter(CLLocationCoordinate2DMake(latitude, longitude), animated: true)
         
         let center = CLLocationCoordinate2DMake(latitude, longitude)
         let span = MKCoordinateSpan.init(latitudeDelta: CLLocationDegrees.init(0.5), longitudeDelta: CLLocationDegrees.init(0.5))
         let region = MKCoordinateRegion.init(center: center, span: span)
         map.setRegion(region, animated: true)
-        
     }
     
     //MARK: TextField Delegates
