@@ -5,7 +5,7 @@ PODS:
     - ObjectMapper (~> 3.4)
   - CDYelpFusionKit (1.5.1):
     - AlamofireObjectMapper (= 5.2.0)
-  - ObjectMapper (3.5.2)
+  - ObjectMapper (3.5.3)
 
 DEPENDENCIES:
   - CDYelpFusionKit
@@ -21,7 +21,7 @@ SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
   AlamofireObjectMapper: 92b6ce2423a9d159e686f6a1d514a009bf903ddc
   CDYelpFusionKit: 94a7802fa23ef0eb78514c8a6f246f55b6bc91f0
-  ObjectMapper: b53ae947d370bf89423e86be7d4e2d2b2a8d3f40
+  ObjectMapper: 97111c97e054a6ee25917662106689f0b4127b37
 
 PODFILE CHECKSUM: 2a29ab13964ad4890d8f92a71969217164ca3bf4
 
